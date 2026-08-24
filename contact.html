@@ -1,1 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Start a project with Digital Studio. Tell us what you need and explore website design, digital setup, social integration and ongoing support."
+  >
+
+  <title>Start a Project | Digital Studio</title>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+</head>
+
+
+<body>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
+
+  <header class="site-header">
+
+    <nav class="navbar">
+
+      <a href="index.html" class="brand">
+
+        <span class="brand-mark">&lt;/&gt;</span>
+
+        <span>Digital Studio</span>
+
+      </a>
+
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+
+      <div class="nav-menu" id="navMenu">
+
+        <a
+          href="index.html"
+          class="nav-link"
+          data-i18n="nav.home"
+        >
+          Home
+        </a>
+
+        <a
+          href="services.html"
+          class="nav-link"
+          data-i18n="nav.services"
+        >
+          Services
+        </a>
+
+        <a
+          href="portfolio.html"
+          class="nav-link"
+          data-i18n="nav.work"
+        >
+          Our Work
+        </a>
+
+        <a
+          href="contact.html"
+          class="nav-link nav-cta active"
+          data-i18n="nav.start"
+        >
+          Start a Project
+        </a>
+
+
+        <div class="language-switcher">
+
+          <button
+            class="language-button active"
+            data-lang="en"
+            type="button"
+          >
+            EN
+          </button>
+
+          <span>/</span>
+
+          <button
+            class="language-button"
+            data-lang="es"
+            type="button"
+          >
+            ES
+          </button>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+    <!-- =========================
+         CONTACT HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-decoration hero-decoration-one"></div>
+      <div class="hero-decoration hero-decoration-two"></div>
+
+
+      <div class="hero-content">
+
+        <div
+          class="eyebrow"
+          data-i18n="contact.hero.eyebrow"
+        >
+          Start a Project
+        </div>
+
+
+        <h1 data-i18n="contact.hero.title">
+          Tell us what you're
+          <span>working on.</span>
+        </h1>
+
+
+        <p
+          class="hero-description"
+          data-i18n="contact.hero.description"
+        >
+          You do not need to know the technical terminology.
+          Tell us about your business, idea or existing website
+          and we'll help identify what makes sense for your project.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECT INTAKE
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-heading">
+
+        <span
+          class="section-label"
+          data-i18n="contact.form.label"
+        >
+          Project Intake
+        </span>
+
+        <h2 data-i18n="contact.form.title">
+          Let's start with the basics.
+        </h2>
+
+        <p data-i18n="contact.form.description">
+          Share as much or as little as you know right now.
+          We can work through the rest together.
+        </p>
+
+      </div>
+
+
+
+      <div class="contact-layout">
+
+        <!-- =========================
+             FORM
+        ========================== -->
+
+        <form
+          class="project-form"
+          id="projectForm"
+        >
+
+          <!-- NAME -->
+
+          <div class="form-group">
+
+            <label
+              for="name"
+              data-i18n="contact.form.name"
+            >
+              Your name
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+
+          </div>
+
+
+
+          <!-- BUSINESS -->
+
+          <div class="form-group">
+
+            <label
+              for="business"
+              data-i18n="contact.form.business"
+            >
+              Business or project name
+            </label>
+
+            <input
+              type="text"
+              id="business"
+              name="business"
+              placeholder="Business or project name"
+            >
+
+          </div>
+
+
+
+          <!-- EMAIL -->
+
+          <div class="form-group">
+
+            <label
+              for="email"
+              data-i18n="contact.form.email"
+            >
+              Email
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            >
+
+          </div>
+
+
+
+          <!-- WHATSAPP -->
+
+          <div class="form-group">
+
+            <label
+              for="whatsapp"
+              data-i18n="contact.form.whatsapp"
+            >
+              WhatsApp or phone number
+            </label>
+
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="+593..."
+            >
+
+          </div>
+
+
+
+          <!-- PROJECT TYPE -->
+
+          <fieldset class="form-group">
+
+            <legend data-i18n="contact.form.projectType">
+              What kind of project is this?
+            </legend>
+
+            <div class="option-grid">
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="project_type"
+                  value="retail"
+                >
+
+                <span data-i18n="contact.form.types.retail">
+                  Retail / Product
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="project_type"
+                  value="services"
+                >
+
+                <span data-i18n="contact.form.types.services">
+                  Professional Services
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="project_type"
+                  value="education"
+                >
+
+                <span data-i18n="contact.form.types.education">
+                  Education
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="project_type"
+                  value="creator"
+                >
+
+                <span data-i18n="contact.form.types.creator">
+                  Creator / Personal Brand
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="project_type"
+                  value="community"
+                >
+
+                <span data-i18n="contact.form.types.community">
+                  Community / Content
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="project_type"
+                  value="other"
+                >
+
+                <span data-i18n="contact.form.types.other">
+                  Something Else
+                </span>
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- SERVICES NEEDED -->
+
+          <fieldset class="form-group">
+
+            <legend data-i18n="contact.form.servicesNeeded">
+              What do you need help with?
+            </legend>
+
+            <div class="option-grid">
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="website"
+                >
+
+                <span data-i18n="contact.form.services.website">
+                  New Website
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="website-update"
+                >
+
+                <span data-i18n="contact.form.services.update">
+                  Existing Website Update
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="social"
+                >
+
+                <span data-i18n="contact.form.services.social">
+                  Social Media Integration
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="whatsapp"
+                >
+
+                <span data-i18n="contact.form.services.whatsapp">
+                  WhatsApp Business
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="google-business"
+                >
+
+                <span data-i18n="contact.form.services.google">
+                  Google Business Profile
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="domain"
+                >
+
+                <span data-i18n="contact.form.services.domain">
+                  Domain & Launch Setup
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="maintenance"
+                >
+
+                <span data-i18n="contact.form.services.maintenance">
+                  Ongoing Maintenance
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="checkbox"
+                  name="services"
+                  value="unsure"
+                >
+
+                <span data-i18n="contact.form.services.unsure">
+                  I'm Not Sure Yet
+                </span>
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- DOMAIN -->
+
+          <fieldset class="form-group">
+
+            <legend data-i18n="contact.form.domain">
+              Do you already own a domain?
+            </legend>
+
+            <div class="option-grid option-grid-three">
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="domain"
+                  value="yes"
+                >
+
+                <span data-i18n="contact.form.answers.yes">
+                  Yes
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="domain"
+                  value="no"
+                >
+
+                <span data-i18n="contact.form.answers.no">
+                  No
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="domain"
+                  value="unsure"
+                >
+
+                <span data-i18n="contact.form.answers.unsure">
+                  I'm Not Sure
+                </span>
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- LANGUAGE -->
+
+          <fieldset class="form-group">
+
+            <legend data-i18n="contact.form.language">
+              What language should the website use?
+            </legend>
+
+            <div class="option-grid option-grid-three">
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="language"
+                  value="english"
+                >
+
+                <span data-i18n="contact.form.languages.english">
+                  English
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="language"
+                  value="spanish"
+                >
+
+                <span data-i18n="contact.form.languages.spanish">
+                  Spanish
+                </span>
+              </label>
+
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="language"
+                  value="bilingual"
+                >
+
+                <span data-i18n="contact.form.languages.bilingual">
+                  English + Spanish
+                </span>
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- CURRENT WEBSITE -->
+
+          <div class="form-group">
+
+            <label
+              for="website"
+              data-i18n="contact.form.website"
+            >
+              Existing website or social page
+            </label>
+
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://"
+            >
+
+          </div>
+
+
+
+          <!-- MESSAGE -->
+
+          <div class="form-group">
+
+            <label
+              for="message"
+              data-i18n="contact.form.message"
+            >
+              Tell us about your idea
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Tell us what you're working on..."
+              required
+            ></textarea>
+
+          </div>
+
+
+
+          <!-- SUBMIT -->
+
+          <div class="form-submit">
+
+            <button
+              type="submit"
+              class="button button-primary"
+              data-i18n="contact.form.submit"
+            >
+              Send My Project
+            </button>
+
+
+            <p
+              class="form-note"
+              data-i18n="contact.form.note"
+            >
+              We'll review your project details and follow up with you.
+            </p>
+
+          </div>
+
+        </form>
+
+
+
+        <!-- =========================
+             CONTACT SIDEBAR
+        ========================== -->
+
+        <aside class="contact-sidebar">
+
+
+          <div class="contact-sidebar-card">
+
+            <span
+              class="section-label"
+              data-i18n="contact.sidebar.label"
+            >
+              Not Sure Where to Start?
+            </span>
+
+
+            <h3 data-i18n="contact.sidebar.title">
+              That's completely fine.
+            </h3>
+
+
+            <p data-i18n="contact.sidebar.description">
+              You do not need to know what hosting, DNS,
+              responsive design or integrations mean.
+              Tell us what you want your business to do online
+              and we can help work through the rest.
+            </p>
+
+          </div>
+
+
+
+          <div class="contact-sidebar-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+
+            <h3 data-i18n="contact.sidebar.idea.title">
+              Have an early-stage idea?
+            </h3>
+
+
+            <p data-i18n="contact.sidebar.idea.description">
+              Projects do not need to be fully figured out
+              before the conversation starts.
+            </p>
+
+          </div>
+
+
+
+          <div class="contact-sidebar-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+
+
+            <h3 data-i18n="contact.sidebar.domain.title">
+              Don't have a domain yet?
+            </h3>
+
+
+            <p data-i18n="contact.sidebar.domain.description">
+              That's okay too. We can explain what you need
+              before your website goes live.
+            </p>
+
+          </div>
+
+
+
+          <div class="contact-sidebar-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-language"></i>
+            </div>
+
+
+            <h3 data-i18n="contact.sidebar.bilingual.title">
+              Need English and Spanish?
+            </h3>
+
+
+            <p data-i18n="contact.sidebar.bilingual.description">
+              Digital Studio can create bilingual website
+              experiences with seamless language switching.
+            </p>
+
+          </div>
+
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROCESS REMINDER
+    ========================== -->
+
+    <section class="digital-section">
+
+      <div class="digital-content">
+
+        <div class="digital-copy">
+
+          <span
+            class="section-label light-label"
+            data-i18n="contact.next.label"
+          >
+            What Happens Next?
+          </span>
+
+
+          <h2 data-i18n="contact.next.title">
+            Simple conversations.
+            <span>Clear next steps.</span>
+          </h2>
+
+
+          <p data-i18n="contact.next.description">
+            Once we understand what you're trying to accomplish,
+            we can discuss the project scope, what tools make sense
+            and what would be required to bring it online.
+          </p>
+
+        </div>
+
+
+        <div class="digital-list">
+
+          <div>
+            <i class="fa-solid fa-1"></i>
+
+            <span data-i18n="contact.next.step1">
+              Share your idea
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-2"></i>
+
+            <span data-i18n="contact.next.step2">
+              Review your needs
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-3"></i>
+
+            <span data-i18n="contact.next.step3">
+              Define the project
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-4"></i>
+
+            <span data-i18n="contact.next.step4">
+              Build & review
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-5"></i>
+
+            <span data-i18n="contact.next.step5">
+              Launch
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-check"></i>
+
+            <span data-i18n="contact.next.step6">
+              Ongoing support when needed
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+
+      <div class="footer-brand">
+
+        <a
+          href="index.html"
+          class="brand footer-logo"
+        >
+
+          <span class="brand-mark">&lt;/&gt;</span>
+
+          <span>Digital Studio</span>
+
+        </a>
+
+
+        <p data-i18n="footer.tagline">
+          Websites, digital presence and business tools
+          built to help ideas grow online.
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-links">
+
+
+        <div>
+
+          <h4 data-i18n="footer.explore">
+            Explore
+          </h4>
+
+          <a
+            href="index.html"
+            data-i18n="nav.home"
+          >
+            Home
+          </a>
+
+          <a
+            href="services.html"
+            data-i18n="nav.services"
+          >
+            Services
+          </a>
+
+          <a
+            href="portfolio.html"
+            data-i18n="nav.work"
+          >
+            Our Work
+          </a>
+
+        </div>
+
+
+
+        <div>
+
+          <h4 data-i18n="footer.contact">
+            Get Started
+          </h4>
+
+          <a
+            href="contact.html"
+            data-i18n="nav.start"
+          >
+            Start a Project
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © <span id="currentYear"></span> Digital Studio.
+
+        <span data-i18n="footer.rights">
+          All rights reserved.
+        </span>
+      </p>
+
+
+      <div class="footer-language">
+
+        <button
+          class="language-button"
+          data-lang="en"
+          type="button"
+        >
+          EN
+        </button>
+
+        <span>/</span>
+
+        <button
+          class="language-button"
+          data-lang="es"
+          type="button"
+        >
+          ES
+        </button>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- Translation data MUST load before script.js -->
+
+  <script src="js/translation.js"></script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
