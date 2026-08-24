@@ -17,10 +17,10 @@
   <title>Start a Project | Digital Studio</title>
 
   <link
-  rel="icon"
-  type="image/png"
-  href="images/Digital%20Studio%20Logo.png"
->
+    rel="icon"
+    type="image/png"
+    href="images/Digital%20Studio%20Logo.png"
+  >
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -53,11 +53,8 @@
     <nav class="navbar">
 
       <a href="index.html" class="brand">
-
         <span class="brand-mark">&lt;/&gt;</span>
-
         <span>Digital Studio</span>
-
       </a>
 
 
@@ -71,7 +68,10 @@
       </button>
 
 
-      <div class="nav-menu" id="navMenu">
+      <div
+        class="nav-menu"
+        id="navMenu"
+      >
 
         <a
           href="index.html"
@@ -146,6 +146,7 @@
 
       <div class="hero-decoration hero-decoration-one"></div>
       <div class="hero-decoration hero-decoration-two"></div>
+      <div class="hero-decoration hero-decoration-three"></div>
 
 
       <div class="hero-content">
@@ -194,9 +195,11 @@
           Project Intake
         </span>
 
+
         <h2 data-i18n="contact.form.title">
           Let's start with the basics.
         </h2>
+
 
         <p data-i18n="contact.form.description">
           Share as much or as little as you know right now.
@@ -234,6 +237,7 @@
               id="name"
               name="name"
               placeholder="Your name"
+              data-i18n-placeholder="contact.placeholders.name"
               required
             >
 
@@ -257,6 +261,7 @@
               id="business"
               name="business"
               placeholder="Business or project name"
+              data-i18n-placeholder="contact.placeholders.business"
             >
 
           </div>
@@ -279,6 +284,7 @@
               id="email"
               name="email"
               placeholder="you@example.com"
+              data-i18n-placeholder="contact.placeholders.email"
               required
             >
 
@@ -302,6 +308,7 @@
               id="whatsapp"
               name="whatsapp"
               placeholder="+593..."
+              data-i18n-placeholder="contact.placeholders.whatsapp"
             >
 
           </div>
@@ -315,6 +322,7 @@
             <legend data-i18n="contact.form.projectType">
               What kind of project is this?
             </legend>
+
 
             <div class="option-grid">
 
@@ -409,6 +417,7 @@
               What do you need help with?
             </legend>
 
+
             <div class="option-grid">
 
               <label class="option-card">
@@ -428,7 +437,7 @@
                 <input
                   type="checkbox"
                   name="services"
-                  value="website-update"
+                  value="update"
                 >
 
                 <span data-i18n="contact.form.services.update">
@@ -467,7 +476,7 @@
                 <input
                   type="checkbox"
                   name="services"
-                  value="google-business"
+                  value="google"
                 >
 
                 <span data-i18n="contact.form.services.google">
@@ -528,6 +537,7 @@
               Do you already own a domain?
             </legend>
 
+
             <div class="option-grid option-grid-three">
 
               <label class="option-card">
@@ -581,6 +591,7 @@
             <legend data-i18n="contact.form.language">
               What language should the website use?
             </legend>
+
 
             <div class="option-grid option-grid-three">
 
@@ -644,6 +655,7 @@
               id="website"
               name="website"
               placeholder="https://"
+              data-i18n-placeholder="contact.placeholders.website"
             >
 
           </div>
@@ -666,6 +678,7 @@
               name="message"
               rows="7"
               placeholder="Tell us what you're working on..."
+              data-i18n-placeholder="contact.placeholders.message"
               required
             ></textarea>
 
@@ -706,6 +719,8 @@
         <aside class="contact-sidebar">
 
 
+          <!-- FIRST SIDEBAR CARD -->
+
           <div class="contact-sidebar-card">
 
             <span
@@ -728,9 +743,25 @@
               and we can help work through the rest.
             </p>
 
+
+            <a
+              href="https://wa.me/593983744247?text=Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20Digital%20Studio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button whatsapp-button"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+
+              <span data-i18n="contact.whatsappButton">
+                Chat on WhatsApp
+              </span>
+            </a>
+
           </div>
 
 
+
+          <!-- IDEA -->
 
           <div class="contact-sidebar-card">
 
@@ -753,6 +784,8 @@
 
 
 
+          <!-- DOMAIN -->
+
           <div class="contact-sidebar-card">
 
             <div class="service-icon">
@@ -773,6 +806,8 @@
           </div>
 
 
+
+          <!-- BILINGUAL -->
 
           <div class="contact-sidebar-card">
 
@@ -845,6 +880,7 @@
             </span>
           </div>
 
+
           <div>
             <i class="fa-solid fa-2"></i>
 
@@ -852,6 +888,7 @@
               Review your needs
             </span>
           </div>
+
 
           <div>
             <i class="fa-solid fa-3"></i>
@@ -861,6 +898,7 @@
             </span>
           </div>
 
+
           <div>
             <i class="fa-solid fa-4"></i>
 
@@ -869,6 +907,7 @@
             </span>
           </div>
 
+
           <div>
             <i class="fa-solid fa-5"></i>
 
@@ -876,6 +915,7 @@
               Launch
             </span>
           </div>
+
 
           <div>
             <i class="fa-solid fa-check"></i>
@@ -910,11 +950,8 @@
           href="index.html"
           class="brand footer-logo"
         >
-
           <span class="brand-mark">&lt;/&gt;</span>
-
           <span>Digital Studio</span>
-
         </a>
 
 
@@ -1020,22 +1057,27 @@
 
   </footer>
 
+
+
+  <!-- =========================
+       FLOATING WHATSAPP
+  ========================== -->
+
   <a
-  class="floating-whatsapp"
-  href="https://wa.me/593983744247?text=Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20Digital%20Studio."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Contact Digital Studio on WhatsApp"
->
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+    class="floating-whatsapp"
+    href="https://wa.me/593983744247?text=Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20Digital%20Studio."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact Digital Studio on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
 
 
   <!-- Translation data MUST load before script.js -->
 
   <script src="js/translation.js"></script>
-
   <script src="js/script.js"></script>
 
 </body>
