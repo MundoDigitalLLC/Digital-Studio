@@ -1,9 +1,10 @@
 /* =========================================================
    DIGITAL STUDIO
-   ENGLISH / SPANISH TRANSLATIONS
+   COMPLETE ENGLISH / SPANISH TRANSLATIONS
 ========================================================= */
 
 window.translations = {
+
 
   /* =======================================================
      ENGLISH
@@ -11,16 +12,30 @@ window.translations = {
 
   en: {
 
+
     /* =====================================================
        NAVIGATION
     ===================================================== */
 
     nav: {
-      home: "Home",
-      services: "Services",
-      work: "Our Work",
-      start: "Start a Project"
+
+      home:
+        "Home",
+
+      services:
+        "Services",
+
+      work:
+        "Our Work",
+
+      about:
+        "About David",
+
+      start:
+        "Start a Project"
+
     },
+
 
 
     /* =====================================================
@@ -44,11 +59,17 @@ window.translations = {
     },
 
 
+
     /* =====================================================
        HOME PAGE
     ===================================================== */
 
     home: {
+
+
+      /* ---------------------------------------------------
+         HERO
+      --------------------------------------------------- */
 
       hero: {
 
@@ -66,6 +87,7 @@ window.translations = {
 
         projectButton:
           "Start a Project",
+
 
         tags: {
 
@@ -91,6 +113,11 @@ window.translations = {
 
       },
 
+
+
+      /* ---------------------------------------------------
+         SERVICES
+      --------------------------------------------------- */
 
       services: {
 
@@ -176,6 +203,45 @@ window.translations = {
       },
 
 
+
+      /* ---------------------------------------------------
+         FOUNDER
+      --------------------------------------------------- */
+
+      founder: {
+
+        label:
+          "Meet the Founder",
+
+        title:
+          "Hi, I'm David.",
+
+        intro:
+          "Digital Studio grew from something I've always enjoyed: taking an idea, understanding how all the pieces fit together, and turning it into something people can actually use.",
+
+        description:
+          "My professional background includes more than eight years working across digital operations, technology, quality assurance and client-facing project management. Today, I bring that same detail-oriented approach to building websites and digital tools for businesses, professionals, educators and entrepreneurs.",
+
+        highlight1:
+          "8+ years of digital experience",
+
+        highlight2:
+          "English, Spanish & Portuguese",
+
+        highlight3:
+          "Technical, creative & QA experience",
+
+        button:
+          "Learn More About David"
+
+      },
+
+
+
+      /* ---------------------------------------------------
+         PORTFOLIO
+      --------------------------------------------------- */
+
       portfolio: {
 
         label:
@@ -204,6 +270,11 @@ window.translations = {
 
       },
 
+
+
+      /* ---------------------------------------------------
+         DIGITAL
+      --------------------------------------------------- */
 
       digital: {
 
@@ -236,6 +307,11 @@ window.translations = {
 
       },
 
+
+
+      /* ---------------------------------------------------
+         PROCESS
+      --------------------------------------------------- */
 
       process: {
 
@@ -306,6 +382,11 @@ window.translations = {
       },
 
 
+
+      /* ---------------------------------------------------
+         CTA
+      --------------------------------------------------- */
+
       cta: {
 
         label:
@@ -325,11 +406,13 @@ window.translations = {
     },
 
 
+
     /* =====================================================
        SERVICES PAGE
     ===================================================== */
 
     services: {
+
 
       hero: {
 
@@ -349,6 +432,7 @@ window.translations = {
           "See Our Work"
 
       },
+
 
 
       build: {
@@ -431,6 +515,7 @@ window.translations = {
       },
 
 
+
       connect: {
 
         label:
@@ -489,6 +574,7 @@ window.translations = {
       },
 
 
+
       launch: {
 
         label:
@@ -519,6 +605,7 @@ window.translations = {
           "Pre-Launch Testing"
 
       },
+
 
 
       maintain: {
@@ -601,6 +688,7 @@ window.translations = {
       },
 
 
+
       ownership: {
 
         label:
@@ -633,6 +721,7 @@ window.translations = {
       },
 
 
+
       cta: {
 
         label:
@@ -652,11 +741,13 @@ window.translations = {
     },
 
 
+
     /* =====================================================
        PORTFOLIO PAGE
     ===================================================== */
 
     portfolio: {
+
 
       hero: {
 
@@ -678,6 +769,7 @@ window.translations = {
       },
 
 
+
       projects: {
 
         label:
@@ -692,6 +784,7 @@ window.translations = {
       },
 
 
+
       dleon: {
 
         category:
@@ -701,6 +794,7 @@ window.translations = {
           "A bridal retail experience showcasing wedding dresses, veils, accessories and private bridal services with direct social and WhatsApp connections."
 
       },
+
 
 
       gabby: {
@@ -714,6 +808,7 @@ window.translations = {
       },
 
 
+
       legal: {
 
         category:
@@ -723,6 +818,7 @@ window.translations = {
           "A professional information-focused website structured to organize legal service content and make complex information easier for visitors to navigate."
 
       },
+
 
 
       cuentame: {
@@ -736,6 +832,7 @@ window.translations = {
       },
 
 
+
       gaming: {
 
         category:
@@ -745,6 +842,7 @@ window.translations = {
           "A gaming-focused web project built around discovery, commentary and organized content for an online audience."
 
       },
+
 
 
       yours: {
@@ -759,6 +857,7 @@ window.translations = {
           "Have something different in mind? Digital Studio can build around your business, audience and goals."
 
       },
+
 
 
       range: {
@@ -791,6 +890,7 @@ window.translations = {
           "Community Projects"
 
       },
+
 
 
       capabilities: {
@@ -873,6 +973,7 @@ window.translations = {
       },
 
 
+
       cta: {
 
         label:
@@ -892,11 +993,282 @@ window.translations = {
     },
 
 
+
+    /* =====================================================
+       ABOUT DAVID PAGE
+    ===================================================== */
+
+    about: {
+
+
+      hero: {
+
+        label:
+          "Meet the Creator",
+
+        title:
+          'Hi, I\'m David. <span>I build digital experiences that work.</span>',
+
+        description:
+          "I'm the founder of Digital Studio, where I combine professional experience in digital operations, technology, quality assurance and project management to help businesses and entrepreneurs build a clear, functional and professional digital presence.",
+
+        workButton:
+          "See My Work",
+
+        contactButton:
+          "Let's Work Together"
+
+      },
+
+
+
+      stats: {
+
+        experience:
+          "Years of Digital Experience",
+
+        languages:
+          "Languages",
+
+        projects:
+          "Web Projects",
+
+        education:
+          "St. John's University"
+
+      },
+
+
+
+      story: {
+
+        label:
+          "My Background",
+
+        title:
+          "From digital operations to building experiences for businesses.",
+
+        p1:
+          "My career began long before I started building websites. For more than eight years, I've worked in digital advertising operations and measurement, managing campaigns, technical implementations, quality assurance and troubleshooting.",
+
+        p2:
+          "That experience taught me that the details behind a digital experience matter just as much as what a user sees on screen. A website can look good, but it also needs to work properly, be easy to understand and remain practical to maintain.",
+
+        p3:
+          "Over time, I began applying that experience to different kinds of projects: websites for retail and bridal businesses, educators, professional services, products, personal brands and digital communities.",
+
+        p4:
+          "Today, Digital Studio brings together both sides of my experience: technical thinking and creative execution."
+
+      },
+
+
+
+      skills: {
+
+        label:
+          "What I Bring",
+
+        title:
+          "More than design.",
+
+        description:
+          "Every project combines strategy, organization, technical experience and clear communication.",
+
+
+        problem: {
+
+          title:
+            "Problem Solving",
+
+          description:
+            "Years working with digital systems and troubleshooting have taught me to approach problems in a structured and practical way."
+
+        },
+
+
+        qa: {
+
+          title:
+            "Attention to Detail",
+
+          description:
+            "My professional background requires rigorous QA, technical precision and careful review before anything goes live."
+
+        },
+
+
+        project: {
+
+          title:
+            "Project Management",
+
+          description:
+            "I'm comfortable managing multiple projects, priorities, deadlines and technical requirements at the same time."
+
+        },
+
+
+        client: {
+
+          title:
+            "Client Collaboration",
+
+          description:
+            "I focus on understanding what each client actually needs before deciding which tools, structure or design make the most sense."
+
+        },
+
+
+        language: {
+
+          title:
+            "Multilingual Communication",
+
+          description:
+            "I speak English and Spanish natively and Portuguese fluently, allowing me to work comfortably across different audiences and languages."
+
+        },
+
+
+        creative: {
+
+          title:
+            "Creative Thinking",
+
+          description:
+            "Not every business needs the same kind of website. I enjoy building around the identity and goals of each individual project."
+
+        }
+
+      },
+
+
+
+      languages: {
+
+        label:
+          "Languages & Education",
+
+        title:
+          'Communication without <span>unnecessary barriers.</span>',
+
+        description:
+          "My multilingual background allows me to work comfortably with clients and projects in different languages, including fully bilingual website experiences.",
+
+        english:
+          "English",
+
+        spanish:
+          "Spanish",
+
+        portuguese:
+          "Portuguese",
+
+        native:
+          "Native",
+
+        fluent:
+          "Fluent"
+
+      },
+
+
+
+      education: {
+
+        degree:
+          "Bachelor of Arts — Environmental Studies"
+
+      },
+
+
+
+      approach: {
+
+        label:
+          "My Approach",
+
+        title:
+          "The right website, not the most complicated website.",
+
+        description:
+          "I don't believe every business needs an enormous platform. I believe it needs a digital experience that represents the business well, works properly and makes it easier for customers to take action.",
+
+
+        step1: {
+
+          title:
+            "Understand",
+
+          description:
+            "First, we understand the business, the audience and the goal."
+
+        },
+
+
+        step2: {
+
+          title:
+            "Simplify",
+
+          description:
+            "We organize the information so it is clear and easy to navigate."
+
+        },
+
+
+        step3: {
+
+          title:
+            "Build",
+
+          description:
+            "We design and connect the tools that make sense for the project."
+
+        },
+
+
+        step4: {
+
+          title:
+            "Review",
+
+          description:
+            "We test, refine and QA everything before launch."
+
+        }
+
+      },
+
+
+
+      cta: {
+
+        label:
+          "Let's Talk",
+
+        title:
+          "Have an idea you want to bring online?",
+
+        description:
+          "Tell me what you're building and let's explore what kind of digital presence can help take it further.",
+
+        button:
+          "Start a Project"
+
+      }
+
+    },
+
+
+
     /* =====================================================
        CONTACT PAGE
     ===================================================== */
 
     contact: {
+
 
       hero: {
 
@@ -910,6 +1282,7 @@ window.translations = {
           "You do not need to know the technical terminology. Tell us about your business, idea or existing website and we'll help identify what makes sense for your project."
 
       },
+
 
 
       form: {
@@ -1046,6 +1419,7 @@ window.translations = {
       },
 
 
+
       placeholders: {
 
         name:
@@ -1069,8 +1443,10 @@ window.translations = {
       },
 
 
+
       whatsappButton:
         "Chat on WhatsApp",
+
 
 
       sidebar: {
@@ -1120,6 +1496,7 @@ window.translations = {
       },
 
 
+
       next: {
 
         label:
@@ -1156,11 +1533,13 @@ window.translations = {
   },
 
 
+
   /* =======================================================
      SPANISH
   ======================================================= */
 
   es: {
+
 
     /* =====================================================
        NAVIGATION
@@ -1177,10 +1556,14 @@ window.translations = {
       work:
         "Nuestro Trabajo",
 
+      about:
+        "Sobre David",
+
       start:
         "Inicia un Proyecto"
 
     },
+
 
 
     /* =====================================================
@@ -1204,11 +1587,13 @@ window.translations = {
     },
 
 
+
     /* =====================================================
        HOME PAGE
     ===================================================== */
 
     home: {
+
 
       hero: {
 
@@ -1251,6 +1636,7 @@ window.translations = {
         }
 
       },
+
 
 
       services: {
@@ -1337,6 +1723,37 @@ window.translations = {
       },
 
 
+
+      founder: {
+
+        label:
+          "Conoce al Fundador",
+
+        title:
+          "Hola, soy David.",
+
+        intro:
+          "Digital Studio nació de algo que siempre he disfrutado: tomar una idea, entender cómo encajan todas las piezas y convertirla en algo que las personas realmente puedan utilizar.",
+
+        description:
+          "Mi experiencia profesional incluye más de ocho años trabajando en operaciones digitales, tecnología, control de calidad y gestión de proyectos con clientes. Hoy aplico ese mismo enfoque detallista al desarrollo de sitios web y herramientas digitales para negocios, profesionales, educadores y emprendedores.",
+
+        highlight1:
+          "8+ años de experiencia digital",
+
+        highlight2:
+          "Inglés, español y portugués",
+
+        highlight3:
+          "Experiencia técnica, creativa y de QA",
+
+        button:
+          "Conoce Más Sobre David"
+
+      },
+
+
+
       portfolio: {
 
         label:
@@ -1364,6 +1781,7 @@ window.translations = {
           "Explorar Todos los Proyectos"
 
       },
+
 
 
       digital: {
@@ -1396,6 +1814,7 @@ window.translations = {
           "Soporte Continuo"
 
       },
+
 
 
       process: {
@@ -1467,6 +1886,7 @@ window.translations = {
       },
 
 
+
       cta: {
 
         label:
@@ -1486,11 +1906,13 @@ window.translations = {
     },
 
 
+
     /* =====================================================
        SERVICES PAGE
     ===================================================== */
 
     services: {
+
 
       hero: {
 
@@ -1510,6 +1932,7 @@ window.translations = {
           "Ver Nuestro Trabajo"
 
       },
+
 
 
       build: {
@@ -1592,6 +2015,7 @@ window.translations = {
       },
 
 
+
       connect: {
 
         label:
@@ -1650,6 +2074,7 @@ window.translations = {
       },
 
 
+
       launch: {
 
         label:
@@ -1680,6 +2105,7 @@ window.translations = {
           "Pruebas Antes del Lanzamiento"
 
       },
+
 
 
       maintain: {
@@ -1762,6 +2188,7 @@ window.translations = {
       },
 
 
+
       ownership: {
 
         label:
@@ -1794,6 +2221,7 @@ window.translations = {
       },
 
 
+
       cta: {
 
         label:
@@ -1813,11 +2241,13 @@ window.translations = {
     },
 
 
+
     /* =====================================================
        PORTFOLIO PAGE
     ===================================================== */
 
     portfolio: {
+
 
       hero: {
 
@@ -1839,6 +2269,7 @@ window.translations = {
       },
 
 
+
       projects: {
 
         label:
@@ -1853,6 +2284,7 @@ window.translations = {
       },
 
 
+
       dleon: {
 
         category:
@@ -1862,6 +2294,7 @@ window.translations = {
           "Una experiencia digital para una boutique bridal que presenta vestidos, velos, accesorios y servicios privados con conexiones directas a redes sociales y WhatsApp."
 
       },
+
 
 
       gabby: {
@@ -1875,6 +2308,7 @@ window.translations = {
       },
 
 
+
       legal: {
 
         category:
@@ -1884,6 +2318,7 @@ window.translations = {
           "Un sitio informativo profesional estructurado para organizar contenido legal y facilitar la navegación de información compleja."
 
       },
+
 
 
       cuentame: {
@@ -1897,6 +2332,7 @@ window.translations = {
       },
 
 
+
       gaming: {
 
         category:
@@ -1906,6 +2342,7 @@ window.translations = {
           "Un proyecto web enfocado en videojuegos, descubrimiento, comentarios y contenido organizado para una comunidad digital."
 
       },
+
 
 
       yours: {
@@ -1920,6 +2357,7 @@ window.translations = {
           "¿Tienes algo diferente en mente? Digital Studio puede construir alrededor de tu negocio, tu audiencia y tus objetivos."
 
       },
+
 
 
       range: {
@@ -1952,6 +2390,7 @@ window.translations = {
           "Proyectos Comunitarios"
 
       },
+
 
 
       capabilities: {
@@ -2034,6 +2473,7 @@ window.translations = {
       },
 
 
+
       cta: {
 
         label:
@@ -2053,11 +2493,282 @@ window.translations = {
     },
 
 
+
+    /* =====================================================
+       ABOUT DAVID PAGE
+    ===================================================== */
+
+    about: {
+
+
+      hero: {
+
+        label:
+          "Conoce al Creador",
+
+        title:
+          'Hola, soy David. <span>Creo experiencias digitales que funcionan.</span>',
+
+        description:
+          "Soy el fundador de Digital Studio, donde combino experiencia profesional en operaciones digitales, tecnología, control de calidad y gestión de proyectos para ayudar a negocios y emprendedores a construir una presencia digital clara, funcional y profesional.",
+
+        workButton:
+          "Ver Mi Trabajo",
+
+        contactButton:
+          "Trabajemos Juntos"
+
+      },
+
+
+
+      stats: {
+
+        experience:
+          "Años de Experiencia Digital",
+
+        languages:
+          "Idiomas",
+
+        projects:
+          "Proyectos Web",
+
+        education:
+          "St. John's University"
+
+      },
+
+
+
+      story: {
+
+        label:
+          "Mi Trayectoria",
+
+        title:
+          "De operaciones digitales a crear experiencias para negocios.",
+
+        p1:
+          "Mi carrera comenzó mucho antes de que empezara a crear sitios web. Durante más de ocho años he trabajado en operaciones de publicidad digital y medición, gestionando campañas, implementaciones técnicas, control de calidad y resolución de problemas.",
+
+        p2:
+          "Esa experiencia me enseñó que los detalles detrás de una experiencia digital son tan importantes como lo que el usuario ve en pantalla. Una página puede verse bien, pero también debe funcionar correctamente, ser clara, fácil de entender y práctica de mantener.",
+
+        p3:
+          "Con el tiempo empecé a aplicar ese conocimiento a distintos tipos de proyectos: sitios para retail y boutiques bridal, educación, servicios profesionales, productos, marcas personales y comunidades digitales.",
+
+        p4:
+          "Hoy, Digital Studio reúne esas dos partes de mi experiencia: pensamiento técnico y ejecución creativa."
+
+      },
+
+
+
+      skills: {
+
+        label:
+          "Lo Que Aporto",
+
+        title:
+          "Más que diseño.",
+
+        description:
+          "Cada proyecto combina estrategia, organización, experiencia técnica y comunicación clara.",
+
+
+        problem: {
+
+          title:
+            "Resolución de Problemas",
+
+          description:
+            "Años trabajando con sistemas digitales y troubleshooting me enseñaron a encontrar soluciones de forma estructurada y práctica."
+
+        },
+
+
+        qa: {
+
+          title:
+            "Atención al Detalle",
+
+          description:
+            "Mi experiencia profesional requiere procesos rigurosos de QA, precisión técnica y revisión cuidadosa antes de cualquier lanzamiento."
+
+        },
+
+
+        project: {
+
+          title:
+            "Gestión de Proyectos",
+
+          description:
+            "Estoy acostumbrado a manejar múltiples proyectos, prioridades, fechas límite y requisitos técnicos al mismo tiempo."
+
+        },
+
+
+        client: {
+
+          title:
+            "Colaboración con Clientes",
+
+          description:
+            "Trabajo para entender qué necesita realmente cada cliente antes de decidir qué herramientas, estructura o diseño tiene más sentido."
+
+        },
+
+
+        language: {
+
+          title:
+            "Comunicación Multilingüe",
+
+          description:
+            "Hablo inglés y español de forma nativa y portugués con fluidez, lo que facilita trabajar con audiencias y proyectos en distintos idiomas."
+
+        },
+
+
+        creative: {
+
+          title:
+            "Pensamiento Creativo",
+
+          description:
+            "No todos los negocios necesitan el mismo tipo de sitio. Me gusta construir alrededor de la identidad y los objetivos de cada proyecto."
+
+        }
+
+      },
+
+
+
+      languages: {
+
+        label:
+          "Idiomas y Formación",
+
+        title:
+          'Comunicación sin <span>barreras innecesarias.</span>',
+
+        description:
+          "Mi experiencia multilingüe me permite trabajar cómodamente con clientes y proyectos en diferentes idiomas, incluyendo sitios completamente bilingües.",
+
+        english:
+          "Inglés",
+
+        spanish:
+          "Español",
+
+        portuguese:
+          "Portugués",
+
+        native:
+          "Nativo",
+
+        fluent:
+          "Fluido"
+
+      },
+
+
+
+      education: {
+
+        degree:
+          "Bachelor of Arts — Environmental Studies"
+
+      },
+
+
+
+      approach: {
+
+        label:
+          "Mi Enfoque",
+
+        title:
+          "El sitio correcto, no el sitio más complicado.",
+
+        description:
+          "No creo que todos los negocios necesiten una plataforma enorme. Creo que necesitan una experiencia digital que represente bien lo que hacen, funcione correctamente y facilite que sus clientes actúen.",
+
+
+        step1: {
+
+          title:
+            "Entender",
+
+          description:
+            "Primero entendemos el negocio, la audiencia y el objetivo."
+
+        },
+
+
+        step2: {
+
+          title:
+            "Simplificar",
+
+          description:
+            "Organizamos la información para que sea clara y fácil de navegar."
+
+        },
+
+
+        step3: {
+
+          title:
+            "Construir",
+
+          description:
+            "Diseñamos y conectamos las herramientas necesarias para el proyecto."
+
+        },
+
+
+        step4: {
+
+          title:
+            "Revisar",
+
+          description:
+            "Probamos, ajustamos y hacemos QA antes del lanzamiento."
+
+        }
+
+      },
+
+
+
+      cta: {
+
+        label:
+          "Hablemos",
+
+        title:
+          "¿Tienes una idea que quieres llevar al mundo digital?",
+
+        description:
+          "Cuéntame qué estás construyendo y veamos qué tipo de presencia digital puede ayudarte a llevarlo más lejos.",
+
+        button:
+          "Inicia un Proyecto"
+
+      }
+
+    },
+
+
+
     /* =====================================================
        CONTACT PAGE
     ===================================================== */
 
     contact: {
+
 
       hero: {
 
@@ -2071,6 +2782,7 @@ window.translations = {
           "No necesitas conocer la terminología técnica. Cuéntanos sobre tu negocio, idea o sitio actual y te ayudaremos a identificar qué tiene sentido para tu proyecto."
 
       },
+
 
 
       form: {
@@ -2207,6 +2919,7 @@ window.translations = {
       },
 
 
+
       placeholders: {
 
         name:
@@ -2230,8 +2943,10 @@ window.translations = {
       },
 
 
+
       whatsappButton:
         "Escríbenos por WhatsApp",
+
 
 
       sidebar: {
@@ -2279,6 +2994,7 @@ window.translations = {
         }
 
       },
+
 
 
       next: {
