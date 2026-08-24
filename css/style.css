@@ -39,8 +39,7 @@
   --shadow-medium:
     0 20px 60px rgba(0, 0, 0, 0.08);
 
-  --transition:
-    0.3s ease;
+  --transition: 0.3s ease;
 }
 
 
@@ -60,7 +59,6 @@ body {
   margin: 0;
 
   background: var(--background);
-
   color: var(--text);
 
   font-family:
@@ -74,8 +72,8 @@ body {
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -113,39 +111,33 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(3.7rem, 8vw, 7rem);
-
-  line-height: 0.98;
-
-  letter-spacing: -0.065em;
-
   margin-bottom: 32px;
 
+  font-size: clamp(3.7rem, 8vw, 7rem);
   font-weight: 800;
+
+  line-height: 0.98;
+  letter-spacing: -0.065em;
 }
 
 h2 {
-  font-size: clamp(2.6rem, 5vw, 4.7rem);
-
-  line-height: 1.05;
-
-  letter-spacing: -0.05em;
-
   margin-bottom: 24px;
 
+  font-size: clamp(2.6rem, 5vw, 4.7rem);
   font-weight: 800;
+
+  line-height: 1.05;
+  letter-spacing: -0.05em;
 }
 
 h3 {
-  font-size: 1.45rem;
-
-  line-height: 1.25;
-
-  letter-spacing: -0.025em;
-
   margin-bottom: 14px;
 
+  font-size: 1.45rem;
   font-weight: 700;
+
+  line-height: 1.25;
+  letter-spacing: -0.025em;
 }
 
 p {
@@ -164,11 +156,9 @@ p {
 
   z-index: 1000;
 
-  background:
-    rgba(247, 246, 242, 0.9);
+  background: rgba(247, 246, 242, 0.9);
 
   backdrop-filter: blur(16px);
-
   -webkit-backdrop-filter: blur(16px);
 
   border-bottom:
@@ -188,7 +178,6 @@ p {
   display: flex;
 
   align-items: center;
-
   justify-content: space-between;
 
   gap: 30px;
@@ -206,6 +195,8 @@ p {
 
   gap: 12px;
 
+  color: var(--text);
+
   text-decoration: none;
 
   font-family:
@@ -213,7 +204,6 @@ p {
     sans-serif;
 
   font-size: 1.25rem;
-
   font-weight: 800;
 
   letter-spacing: -0.03em;
@@ -228,20 +218,16 @@ p {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   border-radius: 13px;
 
   background: var(--accent);
-
   color: white;
 
   font-family: monospace;
-
-  font-weight: 700;
-
   font-size: 1rem;
+  font-weight: 700;
 
   box-shadow:
     0 8px 24px rgba(49, 92, 255, 0.22);
@@ -270,7 +256,6 @@ p {
   text-decoration: none;
 
   font-size: 0.95rem;
-
   font-weight: 600;
 
   transition:
@@ -281,7 +266,6 @@ p {
 
 .nav-link:hover {
   background: var(--surface);
-
   color: var(--text);
 }
 
@@ -292,20 +276,22 @@ p {
 .nav-cta {
   margin-left: 7px;
 
-  padding:
-    11px 18px;
+  padding: 11px 18px;
 
   background: var(--dark);
-
   color: white;
 }
 
 .nav-cta:hover {
   background: var(--accent);
-
   color: white;
 
   transform: translateY(-2px);
+}
+
+.nav-cta.active {
+  background: var(--accent);
+  color: white;
 }
 
 
@@ -355,26 +341,23 @@ p {
 ========================================================= */
 
 .mobile-menu-button {
-  display: none;
-
   width: 46px;
   height: 46px;
 
-  border: 0;
+  display: none;
 
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
   border-radius: 14px;
 
   background: var(--surface);
-
   color: var(--text);
 
   cursor: pointer;
 
   font-size: 1.25rem;
-
-  align-items: center;
-
-  justify-content: center;
 
   box-shadow: var(--shadow-small);
 }
@@ -395,8 +378,7 @@ p {
 
   overflow: hidden;
 
-  padding:
-    110px 24px 120px;
+  padding: 110px 24px 120px;
 }
 
 .hero-content {
@@ -404,10 +386,7 @@ p {
 
   z-index: 2;
 
-  width: min(
-    100%,
-    1100px
-  );
+  width: min(100%, 1100px);
 
   margin: 0 auto;
 
@@ -419,30 +398,23 @@ p {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
-  padding:
-    8px 14px;
+  padding: 8px 14px;
 
   margin-bottom: 26px;
 
-  border:
-    1px solid var(--border);
-
+  border: 1px solid var(--border);
   border-radius: 999px;
 
-  background:
-    rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
 
   color: var(--accent);
 
   font-size: 0.82rem;
-
   font-weight: 800;
 
   letter-spacing: 0.12em;
-
   text-transform: uppercase;
 }
 
@@ -450,7 +422,6 @@ p {
   max-width: 950px;
 
   margin-left: auto;
-
   margin-right: auto;
 }
 
@@ -463,8 +434,7 @@ p {
 .hero-description {
   max-width: 720px;
 
-  margin:
-    0 auto 35px;
+  margin: 0 auto 35px;
 
   font-size: 1.22rem;
 
@@ -525,7 +495,6 @@ p {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   flex-wrap: wrap;
@@ -536,18 +505,19 @@ p {
 }
 
 .button {
+  min-height: 52px;
+
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
-  min-height: 52px;
+  padding: 14px 24px;
 
-  padding:
-    14px 24px;
-
+  border: 0;
   border-radius: 15px;
+
+  cursor: pointer;
 
   text-decoration: none;
 
@@ -566,7 +536,6 @@ p {
 
 .button-primary {
   background: var(--accent);
-
   color: white;
 
   box-shadow:
@@ -582,7 +551,6 @@ p {
 
 .button-secondary {
   background: var(--surface);
-
   color: var(--text);
 
   border: 1px solid var(--border);
@@ -596,7 +564,6 @@ p {
 
 .button-dark {
   background: var(--dark);
-
   color: white;
 }
 
@@ -610,6 +577,10 @@ p {
 ========================================================= */
 
 .hero-tags {
+  max-width: 900px;
+
+  margin: 0 auto;
+
   display: flex;
 
   justify-content: center;
@@ -617,26 +588,19 @@ p {
   flex-wrap: wrap;
 
   gap: 10px;
-
-  max-width: 900px;
-
-  margin: 0 auto;
 }
 
 .hero-tags span {
-  padding:
-    9px 15px;
+  padding: 9px 15px;
 
+  border: 1px solid var(--border);
   border-radius: 999px;
 
   background: var(--surface);
 
-  border: 1px solid var(--border);
-
   color: #555;
 
   font-size: 0.9rem;
-
   font-weight: 600;
 
   box-shadow:
@@ -645,19 +609,17 @@ p {
 
 
 /* =========================================================
-   GENERAL SECTION
+   GENERAL SECTIONS
 ========================================================= */
 
 .section {
-  padding:
-    120px 24px;
+  padding: 120px 24px;
 }
 
 .section-heading {
   max-width: 760px;
 
-  margin:
-    0 auto 60px;
+  margin: 0 auto 60px;
 
   text-align: center;
 }
@@ -665,8 +627,7 @@ p {
 .section-heading p {
   max-width: 650px;
 
-  margin:
-    0 auto;
+  margin: 0 auto;
 
   font-size: 1.08rem;
 
@@ -683,10 +644,7 @@ p {
 }
 
 .services-grid {
-  width: min(
-    100%,
-    var(--max-width)
-  );
+  width: min(100%, var(--max-width));
 
   margin: 0 auto;
 
@@ -703,9 +661,7 @@ p {
 
   padding: 34px;
 
-  border:
-    1px solid var(--border);
-
+  border: 1px solid var(--border);
   border-radius: var(--radius-medium);
 
   background: var(--background);
@@ -731,27 +687,25 @@ p {
 
   margin-bottom: 30px;
 
-  border-radius: 16px;
-
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
-  background: var(--accent-soft);
+  border-radius: 16px;
 
+  background: var(--accent-soft);
   color: var(--accent);
 
   font-size: 1.35rem;
 }
 
 .service-card p {
+  margin-bottom: 0;
+
   font-size: 0.98rem;
 
   line-height: 1.75;
-
-  margin-bottom: 0;
 }
 
 
@@ -797,10 +751,7 @@ p {
 }
 
 .portfolio-grid {
-  width: min(
-    100%,
-    var(--max-width)
-  );
+  width: min(100%, var(--max-width));
 
   margin: 0 auto;
 
@@ -809,18 +760,17 @@ p {
   grid-template-columns:
     repeat(2, 1fr);
 
-  gap: 32px;
+  gap: 42px 32px;
 }
 
 .portfolio-card {
   display: block;
 
-  text-decoration: none;
+  border-radius: var(--radius-large);
 
   color: inherit;
 
-  border-radius:
-    var(--radius-large);
+  text-decoration: none;
 
   transition:
     transform var(--transition);
@@ -838,13 +788,10 @@ p {
 .browser-window {
   overflow: hidden;
 
-  border-radius:
-    var(--radius-medium);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
 
   background: var(--surface);
-
-  border:
-    1px solid var(--border);
 
   box-shadow: var(--shadow-medium);
 
@@ -867,8 +814,7 @@ p {
 
   align-items: center;
 
-  padding:
-    0 15px;
+  padding: 0 15px;
 
   background: #ecebe7;
 
@@ -904,14 +850,12 @@ p {
 }
 
 .browser-address {
-  justify-self: center;
-
+  width: 100%;
   max-width: 290px;
 
-  width: 100%;
+  justify-self: center;
 
-  padding:
-    6px 12px;
+  padding: 6px 12px;
 
   overflow: hidden;
 
@@ -932,7 +876,7 @@ p {
 
 
 /* =========================================================
-   PORTFOLIO PLACEHOLDER
+   PORTFOLIO PLACEHOLDER / IMAGES
 ========================================================= */
 
 .portfolio-placeholder {
@@ -943,7 +887,6 @@ p {
   flex-direction: column;
 
   align-items: center;
-
   justify-content: center;
 
   gap: 12px;
@@ -966,8 +909,36 @@ p {
   color: #777;
 
   font-size: 0.9rem;
-
   font-weight: 600;
+}
+
+/*
+   We'll use this class when we replace the placeholders
+   with screenshots of the live projects.
+*/
+
+.portfolio-preview-image {
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.portfolio-preview-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top center;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.portfolio-card:hover
+.portfolio-preview-image img {
+  transform: scale(1.025);
 }
 
 
@@ -976,8 +947,7 @@ p {
 ========================================================= */
 
 .portfolio-card-info {
-  padding:
-    26px 6px 0;
+  padding: 26px 6px 0;
 }
 
 .portfolio-category {
@@ -988,7 +958,6 @@ p {
   color: var(--accent);
 
   font-size: 0.78rem;
-
   font-weight: 800;
 
   text-transform: uppercase;
@@ -1000,16 +969,15 @@ p {
   display: flex;
 
   align-items: center;
-
   justify-content: space-between;
 
   gap: 15px;
 }
 
 .portfolio-title-row h3 {
-  font-size: 1.7rem;
-
   margin-bottom: 10px;
+
+  font-size: 1.7rem;
 }
 
 .portfolio-arrow {
@@ -1019,25 +987,25 @@ p {
     transform var(--transition);
 }
 
-.portfolio-card:hover .portfolio-arrow {
+.portfolio-card:hover
+.portfolio-arrow {
   transform:
     translate(4px, -4px);
 }
 
 .portfolio-card-info p {
-  margin-bottom: 0;
-
   max-width: 520px;
+
+  margin-bottom: 0;
 }
 
 
 /* =========================================================
-   DIGITAL PRESENCE SECTION
+   DARK DIGITAL SECTION
 ========================================================= */
 
 .digital-section {
-  padding:
-    120px 24px;
+  padding: 120px 24px;
 
   background: var(--dark);
 
@@ -1045,10 +1013,7 @@ p {
 }
 
 .digital-content {
-  width: min(
-    100%,
-    var(--max-width)
-  );
+  width: min(100%, var(--max-width));
 
   margin: 0 auto;
 
@@ -1098,6 +1063,8 @@ p {
 ========================================================= */
 
 .digital-list {
+  width: 100%;
+
   display: grid;
 
   grid-template-columns:
@@ -1107,24 +1074,23 @@ p {
 }
 
 .digital-list div {
+  min-height: 62px;
+
   display: flex;
 
   align-items: center;
 
   gap: 12px;
 
-  min-height: 62px;
+  padding: 15px 18px;
 
-  padding:
-    15px 18px;
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
 
   border-radius: 15px;
 
   background:
     rgba(255, 255, 255, 0.06);
-
-  border:
-    1px solid rgba(255, 255, 255, 0.1);
 
   color: #eeeeee;
 
@@ -1135,19 +1101,42 @@ p {
   width: 27px;
   height: 27px;
 
+  flex: 0 0 27px;
+
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   border-radius: 50%;
 
   background: var(--accent);
-
   color: white;
 
   font-size: 0.7rem;
+}
+
+
+/*
+   Some pages use .digital-list inside a light section.
+   This keeps those cards readable.
+*/
+
+.section > .digital-list {
+  width: min(100%, 900px);
+
+  margin: 0 auto;
+}
+
+.section > .digital-list div {
+  border-color: var(--border);
+
+  background: var(--surface);
+
+  color: var(--text);
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.025);
 }
 
 
@@ -1160,10 +1149,7 @@ p {
 }
 
 .process-grid {
-  width: min(
-    100%,
-    var(--max-width)
-  );
+  width: min(100%, var(--max-width));
 
   margin: 0 auto;
 
@@ -1180,16 +1166,12 @@ p {
 
   min-height: 280px;
 
-  padding:
-    28px;
+  padding: 28px;
 
-  border-radius:
-    var(--radius-medium);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
 
   background: var(--background);
-
-  border:
-    1px solid var(--border);
 }
 
 .step-number {
@@ -1204,7 +1186,6 @@ p {
     sans-serif;
 
   font-size: 1rem;
-
   font-weight: 800;
 
   letter-spacing: 0.08em;
@@ -1228,8 +1209,7 @@ p {
 ========================================================= */
 
 .cta-section {
-  padding:
-    130px 24px;
+  padding: 130px 24px;
 
   background:
     linear-gradient(
@@ -1249,7 +1229,8 @@ p {
   text-align: center;
 }
 
-.cta-section .section-label {
+.cta-section
+.section-label {
   background:
     rgba(255, 255, 255, 0.12);
 
@@ -1266,8 +1247,7 @@ p {
 .cta-content p {
   max-width: 650px;
 
-  margin:
-    0 auto 34px;
+  margin: 0 auto 34px;
 
   color:
     rgba(255, 255, 255, 0.82);
@@ -1275,17 +1255,403 @@ p {
   font-size: 1.08rem;
 }
 
-.cta-section .button-primary {
+.cta-section
+.button-primary {
   background: white;
-
   color: var(--accent);
 
   box-shadow:
     0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.cta-section .button-primary:hover {
+.cta-section
+.button-primary:hover {
   background: #f5f5f5;
+}
+
+
+/* =========================================================
+   CONTACT PAGE
+========================================================= */
+
+.contact-layout {
+  width: min(100%, 1160px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.65fr)
+    minmax(280px, 0.75fr);
+
+  align-items: start;
+
+  gap: 38px;
+}
+
+
+/* =========================================================
+   PROJECT FORM
+========================================================= */
+
+.project-form {
+  padding: 44px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+
+  background: var(--surface);
+
+  box-shadow: var(--shadow-medium);
+}
+
+.form-group {
+  margin: 0 0 34px;
+}
+
+.form-group:last-of-type {
+  margin-bottom: 30px;
+}
+
+.form-group label,
+.form-group legend {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: var(--text);
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.form-group legend {
+  padding: 0;
+
+  margin-bottom: 16px;
+}
+
+fieldset.form-group {
+  min-width: 0;
+
+  padding: 0;
+
+  border: 0;
+}
+
+
+/* =========================================================
+   TEXT INPUTS
+========================================================= */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  padding: 15px 17px;
+
+  border: 1px solid var(--border);
+  border-radius: 13px;
+
+  outline: none;
+
+  background: var(--background);
+
+  color: var(--text);
+
+  font-size: 0.98rem;
+
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+.form-group textarea {
+  min-height: 170px;
+
+  resize: vertical;
+
+  line-height: 1.7;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9a9a9a;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="url"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--accent);
+
+  background: white;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(49, 92, 255, 0.10);
+}
+
+
+/* =========================================================
+   FORM OPTION CARDS
+========================================================= */
+
+.option-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 11px;
+}
+
+.option-grid-three {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+}
+
+.option-card {
+  position: relative;
+
+  min-height: 60px;
+
+  margin: 0 !important;
+
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 14px 15px;
+
+  border: 1px solid var(--border);
+  border-radius: 13px;
+
+  background: var(--background);
+
+  cursor: pointer;
+
+  color: var(--text);
+
+  font-family:
+    "DM Sans",
+    sans-serif !important;
+
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+
+  transition:
+    border-color var(--transition),
+    background var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.option-card:hover {
+  border-color:
+    rgba(49, 92, 255, 0.5);
+
+  background: var(--accent-soft);
+
+  transform: translateY(-2px);
+}
+
+.option-card input[type="radio"],
+.option-card input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+
+  flex: 0 0 18px;
+
+  margin: 0;
+
+  accent-color: var(--accent);
+
+  cursor: pointer;
+}
+
+.option-card span {
+  line-height: 1.35;
+}
+
+
+/*
+   Modern browsers support :has().
+   This highlights the entire card after the visitor
+   selects a checkbox or radio button.
+*/
+
+.option-card:has(input:checked) {
+  border-color: var(--accent);
+
+  background: var(--accent-soft);
+
+  box-shadow:
+    0 5px 18px rgba(49, 92, 255, 0.08);
+}
+
+
+/* =========================================================
+   FORM SUBMIT
+========================================================= */
+
+.form-submit {
+  padding-top: 8px;
+}
+
+.form-submit .button {
+  width: 100%;
+
+  min-height: 58px;
+
+  font-size: 1rem;
+}
+
+.form-note {
+  margin: 15px 0 0;
+
+  text-align: center;
+
+  color: #888;
+
+  font-size: 0.84rem;
+}
+
+
+/* =========================================================
+   CONTACT SIDEBAR
+========================================================= */
+
+.contact-sidebar {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  position: sticky;
+
+  top: 110px;
+}
+
+.contact-sidebar-card {
+  padding: 28px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
+
+  background: var(--surface);
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.035);
+}
+
+.contact-sidebar-card:first-child {
+  padding: 32px;
+
+  background: var(--dark);
+
+  border-color: var(--dark);
+
+  color: white;
+}
+
+.contact-sidebar-card:first-child
+.section-label {
+  margin-bottom: 22px;
+
+  border-color:
+    rgba(255, 255, 255, 0.13);
+
+  background:
+    rgba(255, 255, 255, 0.07);
+
+  color: #8ea8ff;
+
+  font-size: 0.69rem;
+}
+
+.contact-sidebar-card:first-child h3 {
+  color: white;
+}
+
+.contact-sidebar-card:first-child p {
+  color: #bcbcbc;
+}
+
+.contact-sidebar-card
+.service-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 20px;
+
+  font-size: 1.1rem;
+}
+
+.contact-sidebar-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 1.15rem;
+}
+
+.contact-sidebar-card p {
+  margin-bottom: 0;
+
+  font-size: 0.91rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM STATUS MESSAGE
+   Ready for script.js / form integration later
+========================================================= */
+
+.form-status {
+  display: none;
+
+  margin-top: 18px;
+
+  padding: 14px 16px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-status.success {
+  display: block;
+
+  background: #e8f7ef;
+
+  color: #167347;
+}
+
+.form-status.error {
+  display: block;
+
+  background: #fff0f0;
+
+  color: #a83232;
 }
 
 
@@ -1294,8 +1660,7 @@ p {
 ========================================================= */
 
 .site-footer {
-  padding:
-    70px 24px 30px;
+  padding: 70px 24px 30px;
 
   background: var(--dark);
 
@@ -1303,10 +1668,7 @@ p {
 }
 
 .footer-content {
-  width: min(
-    100%,
-    var(--max-width)
-  );
+  width: min(100%, var(--max-width));
 
   margin: 0 auto;
 
@@ -1321,9 +1683,9 @@ p {
 }
 
 .footer-logo {
-  color: white;
-
   margin-bottom: 20px;
+
+  color: white;
 }
 
 .footer-brand p {
@@ -1364,7 +1726,8 @@ p {
 
   text-decoration: none;
 
-  transition: color var(--transition);
+  transition:
+    color var(--transition);
 }
 
 .footer-links a:hover {
@@ -1377,10 +1740,7 @@ p {
 ========================================================= */
 
 .footer-bottom {
-  width: min(
-    100%,
-    var(--max-width)
-  );
+  width: min(100%, var(--max-width));
 
   margin: 0 auto;
 
@@ -1392,7 +1752,6 @@ p {
   display: flex;
 
   align-items: center;
-
   justify-content: space-between;
 
   gap: 20px;
@@ -1408,6 +1767,20 @@ p {
 
 .footer-language {
   margin-left: 0;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / FOCUS
+========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+.option-card:focus-within {
+  outline: 3px solid
+    rgba(49, 92, 255, 0.28);
+
+  outline-offset: 3px;
 }
 
 
@@ -1438,6 +1811,18 @@ p {
 
     gap: 50px;
   }
+
+  .contact-layout {
+    grid-template-columns:
+      minmax(0, 1.35fr)
+      minmax(260px, 0.65fr);
+
+    gap: 25px;
+  }
+
+  .project-form {
+    padding: 34px;
+  }
 }
 
 
@@ -1465,8 +1850,6 @@ p {
     left: 16px;
     right: 16px;
 
-    padding: 18px;
-
     display: none;
 
     flex-direction: column;
@@ -1475,11 +1858,12 @@ p {
 
     gap: 7px;
 
+    padding: 18px;
+
+    border: 1px solid var(--border);
     border-radius: 20px;
 
     background: var(--surface);
-
-    border: 1px solid var(--border);
 
     box-shadow: var(--shadow-medium);
   }
@@ -1501,13 +1885,29 @@ p {
   .language-switcher {
     justify-content: center;
 
-    margin:
-      8px 0 0;
+    margin: 8px 0 0;
 
     padding-top: 12px;
 
     border-top:
       1px solid var(--border);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-sidebar {
+    position: static;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .contact-sidebar-card:first-child {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1531,8 +1931,7 @@ p {
   .hero {
     min-height: auto;
 
-    padding:
-      95px 20px 100px;
+    padding: 95px 20px 100px;
   }
 
   .hero-description {
@@ -1540,14 +1939,13 @@ p {
   }
 
   .hero-buttons {
+    max-width: 380px;
+
+    margin: 0 auto 40px;
+
     flex-direction: column;
 
     align-items: stretch;
-
-    max-width: 380px;
-
-    margin:
-      0 auto 40px;
   }
 
   .button {
@@ -1555,8 +1953,7 @@ p {
   }
 
   .section {
-    padding:
-      90px 20px;
+    padding: 90px 20px;
   }
 
   .section-heading {
@@ -1574,8 +1971,7 @@ p {
   }
 
   .digital-section {
-    padding:
-      90px 20px;
+    padding: 90px 20px;
   }
 
   .digital-list {
@@ -1591,8 +1987,7 @@ p {
   }
 
   .cta-section {
-    padding:
-      100px 20px;
+    padding: 100px 20px;
   }
 
   .footer-links {
@@ -1600,13 +1995,32 @@ p {
   }
 
   .footer-bottom {
-    align-items: flex-start;
-
     flex-direction: column;
+
+    align-items: flex-start;
   }
 
   .browser-address {
     max-width: 210px;
+  }
+
+  .project-form {
+    padding: 27px 22px;
+
+    border-radius: var(--radius-medium);
+  }
+
+  .option-grid,
+  .option-grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-sidebar-card:first-child {
+    grid-column: auto;
   }
 }
 
@@ -1639,10 +2053,9 @@ p {
   }
 
   .hero-tags span {
-    font-size: 0.8rem;
+    padding: 8px 12px;
 
-    padding:
-      8px 12px;
+    font-size: 0.8rem;
   }
 
   .service-card {
@@ -1660,5 +2073,33 @@ p {
 
   .portfolio-title-row h3 {
     font-size: 1.45rem;
+  }
+
+  .project-form {
+    padding: 24px 18px;
+  }
+
+  .contact-sidebar-card {
+    padding: 24px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
