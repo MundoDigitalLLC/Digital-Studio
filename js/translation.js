@@ -37,7 +37,6 @@ window.translations = {
     },
 
 
-
     /* =====================================================
        FOOTER
     ===================================================== */
@@ -57,7 +56,6 @@ window.translations = {
         "All rights reserved."
 
     },
-
 
 
     /* =====================================================
@@ -112,7 +110,6 @@ window.translations = {
         }
 
       },
-
 
 
       /* ---------------------------------------------------
@@ -203,7 +200,6 @@ window.translations = {
       },
 
 
-
       /* ---------------------------------------------------
          FOUNDER
       --------------------------------------------------- */
@@ -229,13 +225,12 @@ window.translations = {
           "English, Spanish & Portuguese",
 
         highlight3:
-          "Technical, creative & QA experience",
+          "Technical, creative and quality assurance experience",
 
         button:
           "Learn More About David"
 
       },
-
 
 
       /* ---------------------------------------------------
@@ -269,7 +264,6 @@ window.translations = {
           "Explore All Projects"
 
       },
-
 
 
       /* ---------------------------------------------------
@@ -306,7 +300,6 @@ window.translations = {
           "Ongoing Support"
 
       },
-
 
 
       /* ---------------------------------------------------
@@ -382,7 +375,6 @@ window.translations = {
       },
 
 
-
       /* ---------------------------------------------------
          CTA
       --------------------------------------------------- */
@@ -404,7 +396,6 @@ window.translations = {
       }
 
     },
-
 
 
     /* =====================================================
@@ -432,7 +423,6 @@ window.translations = {
           "See Our Work"
 
       },
-
 
 
       build: {
@@ -515,7 +505,6 @@ window.translations = {
       },
 
 
-
       connect: {
 
         label:
@@ -574,7 +563,6 @@ window.translations = {
       },
 
 
-
       launch: {
 
         label:
@@ -605,7 +593,6 @@ window.translations = {
           "Pre-Launch Testing"
 
       },
-
 
 
       maintain: {
@@ -688,7 +675,6 @@ window.translations = {
       },
 
 
-
       ownership: {
 
         label:
@@ -721,7 +707,6 @@ window.translations = {
       },
 
 
-
       cta: {
 
         label:
@@ -739,7 +724,6 @@ window.translations = {
       }
 
     },
-
 
 
     /* =====================================================
@@ -769,7 +753,6 @@ window.translations = {
       },
 
 
-
       projects: {
 
         label:
@@ -784,7 +767,6 @@ window.translations = {
       },
 
 
-
       dleon: {
 
         category:
@@ -794,7 +776,6 @@ window.translations = {
           "A bridal retail experience showcasing wedding dresses, veils, accessories and private bridal services with direct social and WhatsApp connections."
 
       },
-
 
 
       gabby: {
@@ -808,7 +789,6 @@ window.translations = {
       },
 
 
-
       legal: {
 
         category:
@@ -818,7 +798,6 @@ window.translations = {
           "A professional information-focused website structured to organize legal service content and make complex information easier for visitors to navigate."
 
       },
-
 
 
       cuentame: {
@@ -832,7 +811,6 @@ window.translations = {
       },
 
 
-
       gaming: {
 
         category:
@@ -842,7 +820,6 @@ window.translations = {
           "A gaming-focused web project built around discovery, commentary and organized content for an online audience."
 
       },
-
 
 
       yours: {
@@ -857,7 +834,6 @@ window.translations = {
           "Have something different in mind? Digital Studio can build around your business, audience and goals."
 
       },
-
 
 
       range: {
@@ -890,7 +866,6 @@ window.translations = {
           "Community Projects"
 
       },
-
 
 
       capabilities: {
@@ -973,7 +948,6 @@ window.translations = {
       },
 
 
-
       cta: {
 
         label:
@@ -991,7 +965,6 @@ window.translations = {
       }
 
     },
-
 
 
     /* =====================================================
@@ -1021,7 +994,6 @@ window.translations = {
       },
 
 
-
       stats: {
 
         experience:
@@ -1037,7 +1009,6 @@ window.translations = {
           "St. John's University"
 
       },
-
 
 
       story: {
@@ -1062,6 +1033,23 @@ window.translations = {
 
       },
 
+
+      /* ---------------------------------------------------
+         PROFESSIONAL EXPERIENCE / BRANDS
+      --------------------------------------------------- */
+
+      brands: {
+
+        label:
+          "Professional Experience",
+
+        title:
+          "Brands and accounts I've worked with.",
+
+        description:
+          "Throughout my career in digital operations and advertising, I've worked with campaigns and accounts for brands across a wide range of industries and scales."
+
+      },
 
 
       skills: {
@@ -1093,7 +1081,7 @@ window.translations = {
             "Attention to Detail",
 
           description:
-            "My professional background requires rigorous QA, technical precision and careful review before anything goes live."
+            "My professional background requires rigorous quality assurance, technical precision and careful review before anything goes live."
 
         },
 
@@ -1144,7 +1132,6 @@ window.translations = {
       },
 
 
-
       languages: {
 
         label:
@@ -1174,14 +1161,12 @@ window.translations = {
       },
 
 
-
       education: {
 
         degree:
           "Bachelor of Arts — Environmental Studies"
 
       },
-
 
 
       approach: {
@@ -1235,12 +1220,11 @@ window.translations = {
             "Review",
 
           description:
-            "We test, refine and QA everything before launch."
+            "We test, refine and perform quality assurance before launch."
 
         }
 
       },
-
 
 
       cta: {
@@ -1262,7 +1246,6 @@ window.translations = {
     },
 
 
-
     /* =====================================================
        CONTACT PAGE
     ===================================================== */
@@ -1282,7 +1265,6 @@ window.translations = {
           "You do not need to know the technical terminology. Tell us about your business, idea or existing website and we'll help identify what makes sense for your project."
 
       },
-
 
 
       form: {
@@ -1419,7 +1401,6 @@ window.translations = {
       },
 
 
-
       placeholders: {
 
         name:
@@ -1443,10 +1424,8 @@ window.translations = {
       },
 
 
-
       whatsappButton:
         "Chat on WhatsApp",
-
 
 
       sidebar: {
@@ -1496,7 +1475,6 @@ window.translations = {
       },
 
 
-
       next: {
 
         label:
@@ -1533,7 +1511,6 @@ window.translations = {
   },
 
 
-
   /* =======================================================
      SPANISH
   ======================================================= */
@@ -1565,7 +1542,6 @@ window.translations = {
     },
 
 
-
     /* =====================================================
        FOOTER
     ===================================================== */
@@ -1585,7 +1561,6 @@ window.translations = {
         "Todos los derechos reservados."
 
     },
-
 
 
     /* =====================================================
@@ -1636,7 +1611,6 @@ window.translations = {
         }
 
       },
-
 
 
       services: {
@@ -1723,6 +1697,9 @@ window.translations = {
       },
 
 
+      /* ---------------------------------------------------
+         FOUNDER
+      --------------------------------------------------- */
 
       founder: {
 
@@ -1745,13 +1722,12 @@ window.translations = {
           "Inglés, español y portugués",
 
         highlight3:
-          "Experiencia técnica, creativa y de QA",
+          "Experiencia técnica, creativa y de control de calidad",
 
         button:
           "Conoce Más Sobre David"
 
       },
-
 
 
       portfolio: {
@@ -1781,7 +1757,6 @@ window.translations = {
           "Explorar Todos los Proyectos"
 
       },
-
 
 
       digital: {
@@ -1814,7 +1789,6 @@ window.translations = {
           "Soporte Continuo"
 
       },
-
 
 
       process: {
@@ -1886,7 +1860,6 @@ window.translations = {
       },
 
 
-
       cta: {
 
         label:
@@ -1904,7 +1877,6 @@ window.translations = {
       }
 
     },
-
 
 
     /* =====================================================
@@ -1932,7 +1904,6 @@ window.translations = {
           "Ver Nuestro Trabajo"
 
       },
-
 
 
       build: {
@@ -2015,7 +1986,6 @@ window.translations = {
       },
 
 
-
       connect: {
 
         label:
@@ -2074,7 +2044,6 @@ window.translations = {
       },
 
 
-
       launch: {
 
         label:
@@ -2105,7 +2074,6 @@ window.translations = {
           "Pruebas Antes del Lanzamiento"
 
       },
-
 
 
       maintain: {
@@ -2188,7 +2156,6 @@ window.translations = {
       },
 
 
-
       ownership: {
 
         label:
@@ -2221,7 +2188,6 @@ window.translations = {
       },
 
 
-
       cta: {
 
         label:
@@ -2239,7 +2205,6 @@ window.translations = {
       }
 
     },
-
 
 
     /* =====================================================
@@ -2269,7 +2234,6 @@ window.translations = {
       },
 
 
-
       projects: {
 
         label:
@@ -2284,7 +2248,6 @@ window.translations = {
       },
 
 
-
       dleon: {
 
         category:
@@ -2294,7 +2257,6 @@ window.translations = {
           "Una experiencia digital para una boutique bridal que presenta vestidos, velos, accesorios y servicios privados con conexiones directas a redes sociales y WhatsApp."
 
       },
-
 
 
       gabby: {
@@ -2308,7 +2270,6 @@ window.translations = {
       },
 
 
-
       legal: {
 
         category:
@@ -2318,7 +2279,6 @@ window.translations = {
           "Un sitio informativo profesional estructurado para organizar contenido legal y facilitar la navegación de información compleja."
 
       },
-
 
 
       cuentame: {
@@ -2332,7 +2292,6 @@ window.translations = {
       },
 
 
-
       gaming: {
 
         category:
@@ -2342,7 +2301,6 @@ window.translations = {
           "Un proyecto web enfocado en videojuegos, descubrimiento, comentarios y contenido organizado para una comunidad digital."
 
       },
-
 
 
       yours: {
@@ -2357,7 +2315,6 @@ window.translations = {
           "¿Tienes algo diferente en mente? Digital Studio puede construir alrededor de tu negocio, tu audiencia y tus objetivos."
 
       },
-
 
 
       range: {
@@ -2390,7 +2347,6 @@ window.translations = {
           "Proyectos Comunitarios"
 
       },
-
 
 
       capabilities: {
@@ -2473,7 +2429,6 @@ window.translations = {
       },
 
 
-
       cta: {
 
         label:
@@ -2491,7 +2446,6 @@ window.translations = {
       }
 
     },
-
 
 
     /* =====================================================
@@ -2521,7 +2475,6 @@ window.translations = {
       },
 
 
-
       stats: {
 
         experience:
@@ -2537,7 +2490,6 @@ window.translations = {
           "St. John's University"
 
       },
-
 
 
       story: {
@@ -2563,6 +2515,23 @@ window.translations = {
       },
 
 
+      /* ---------------------------------------------------
+         EXPERIENCIA PROFESIONAL / MARCAS
+      --------------------------------------------------- */
+
+      brands: {
+
+        label:
+          "Experiencia Profesional",
+
+        title:
+          "Marcas y cuentas con las que he trabajado.",
+
+        description:
+          "A lo largo de mi carrera en operaciones digitales y publicidad, he trabajado con campañas y cuentas para marcas de distintas industrias y escalas."
+
+      },
+
 
       skills: {
 
@@ -2582,7 +2551,7 @@ window.translations = {
             "Resolución de Problemas",
 
           description:
-            "Años trabajando con sistemas digitales y troubleshooting me enseñaron a encontrar soluciones de forma estructurada y práctica."
+            "Años trabajando con sistemas digitales y resolución de problemas me enseñaron a encontrar soluciones de forma estructurada y práctica."
 
         },
 
@@ -2593,7 +2562,7 @@ window.translations = {
             "Atención al Detalle",
 
           description:
-            "Mi experiencia profesional requiere procesos rigurosos de QA, precisión técnica y revisión cuidadosa antes de cualquier lanzamiento."
+            "Mi experiencia profesional requiere procesos rigurosos de control de calidad, precisión técnica y revisión cuidadosa antes de cualquier lanzamiento."
 
         },
 
@@ -2644,7 +2613,6 @@ window.translations = {
       },
 
 
-
       languages: {
 
         label:
@@ -2674,14 +2642,12 @@ window.translations = {
       },
 
 
-
       education: {
 
         degree:
           "Bachelor of Arts — Environmental Studies"
 
       },
-
 
 
       approach: {
@@ -2735,12 +2701,11 @@ window.translations = {
             "Revisar",
 
           description:
-            "Probamos, ajustamos y hacemos QA antes del lanzamiento."
+            "Probamos, ajustamos y realizamos control de calidad antes del lanzamiento."
 
         }
 
       },
-
 
 
       cta: {
@@ -2762,7 +2727,6 @@ window.translations = {
     },
 
 
-
     /* =====================================================
        CONTACT PAGE
     ===================================================== */
@@ -2782,7 +2746,6 @@ window.translations = {
           "No necesitas conocer la terminología técnica. Cuéntanos sobre tu negocio, idea o sitio actual y te ayudaremos a identificar qué tiene sentido para tu proyecto."
 
       },
-
 
 
       form: {
@@ -2919,7 +2882,6 @@ window.translations = {
       },
 
 
-
       placeholders: {
 
         name:
@@ -2943,10 +2905,8 @@ window.translations = {
       },
 
 
-
       whatsappButton:
         "Escríbenos por WhatsApp",
-
 
 
       sidebar: {
@@ -2994,7 +2954,6 @@ window.translations = {
         }
 
       },
-
 
 
       next: {
