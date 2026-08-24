@@ -16,10 +16,8 @@
 
   <title>Our Work | Digital Studio</title>
 
-  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -28,7 +26,6 @@
     rel="stylesheet"
   >
 
-  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -38,927 +35,54 @@
 
 <body>
 
-  <!-- =========================
-       HEADER / NAVIGATION
-  ========================== -->
+<header class="site-header">
 
-  <header class="site-header">
+  <nav class="navbar">
 
-    <nav class="navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>Digital Studio</span>
+    </a>
 
-      <a href="index.html" class="brand">
-        <span class="brand-mark">&lt;/&gt;</span>
-        <span>Digital Studio</span>
+
+    <button
+      class="mobile-menu-button"
+      id="mobileMenuButton"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+    <div class="nav-menu" id="navMenu">
+
+      <a href="index.html" class="nav-link" data-i18n="nav.home">
+        Home
       </a>
 
-      <button
-        class="mobile-menu-button"
-        id="mobileMenuButton"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
+      <a href="services.html" class="nav-link" data-i18n="nav.services">
+        Services
+      </a>
 
-      <div class="nav-menu" id="navMenu">
+      <a href="portfolio.html" class="nav-link active" data-i18n="nav.work">
+        Our Work
+      </a>
 
-        <a
-          href="index.html"
-          class="nav-link"
-          data-i18n="nav.home"
-        >
-          Home
-        </a>
+      <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.start">
+        Start a Project
+      </a>
 
-        <a
-          href="services.html"
-          class="nav-link"
-          data-i18n="nav.services"
-        >
-          Services
-        </a>
 
-        <a
-          href="portfolio.html"
-          class="nav-link active"
-          data-i18n="nav.work"
-        >
-          Our Work
-        </a>
+      <div class="language-switcher">
 
-        <a
-          href="contact.html"
-          class="nav-link nav-cta"
-          data-i18n="nav.start"
-        >
-          Start a Project
-        </a>
-
-        <div class="language-switcher">
-
-          <button
-            class="language-button active"
-            data-lang="en"
-            type="button"
-          >
-            EN
-          </button>
-
-          <span>/</span>
-
-          <button
-            class="language-button"
-            data-lang="es"
-            type="button"
-          >
-            ES
-          </button>
-
-        </div>
-
-      </div>
-
-    </nav>
-
-  </header>
-
-
-
-  <main>
-
-    <!-- =========================
-         PORTFOLIO HERO
-    ========================== -->
-
-    <section class="hero">
-
-      <div class="hero-decoration hero-decoration-one"></div>
-      <div class="hero-decoration hero-decoration-two"></div>
-
-      <div class="hero-content">
-
-        <div
-          class="eyebrow"
-          data-i18n="portfolio.hero.eyebrow"
-        >
-          Selected Work
-        </div>
-
-        <h1 data-i18n="portfolio.hero.title">
-          Different ideas.
-          <span>Built for the web.</span>
-        </h1>
-
-        <p
-          class="hero-description"
-          data-i18n="portfolio.hero.description"
-        >
-          Explore real projects created for businesses,
-          professionals, educators, products and online communities.
-          Every project begins with a different goal.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a
-            href="#projects"
-            class="button button-primary"
-            data-i18n="portfolio.hero.button"
-          >
-            Explore Projects
-          </a>
-
-          <a
-            href="contact.html"
-            class="button button-secondary"
-            data-i18n="portfolio.hero.contact"
-          >
-            Build Something Together
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
-    <section
-      class="section portfolio-preview"
-      id="projects"
-    >
-
-      <div class="section-heading">
-
-        <span
-          class="section-label"
-          data-i18n="portfolio.projects.label"
-        >
-          The Portfolio
-        </span>
-
-        <h2 data-i18n="portfolio.projects.title">
-          One studio. Different kinds of projects.
-        </h2>
-
-        <p data-i18n="portfolio.projects.description">
-          From bridal retail to education and professional services,
-          each project is designed around the needs of the person,
-          business or idea behind it.
-        </p>
-
-      </div>
-
-
-      <div class="portfolio-grid">
-
-        <!-- D'LEON DESIGNS -->
-
-        <a
-          href="https://leonfashion.github.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="portfolio-card"
-        >
-
-          <div class="browser-window">
-
-            <div class="browser-bar">
-
-              <div class="browser-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="browser-address">
-                leonfashion.github.io
-              </div>
-
-            </div>
-
-            <div class="portfolio-placeholder">
-              <i class="fa-solid fa-ring"></i>
-
-              <span data-i18n="portfolio.preview">
-                Website Preview
-              </span>
-            </div>
-
-          </div>
-
-          <div class="portfolio-card-info">
-
-            <span
-              class="portfolio-category"
-              data-i18n="portfolio.dleon.category"
-            >
-              Retail • Bridal
-            </span>
-
-            <div class="portfolio-title-row">
-              <h3>D'Leon Designs</h3>
-              <span class="portfolio-arrow">↗</span>
-            </div>
-
-            <p data-i18n="portfolio.dleon.description">
-              A bridal retail experience showcasing wedding dresses,
-              veils, accessories and private bridal services with
-              direct social and WhatsApp connections.
-            </p>
-
-          </div>
-
-        </a>
-
-
-
-        <!-- ENGLISH WITH GABBY -->
-
-        <a
-          href="https://www.englishwithgabbyec.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="portfolio-card"
-        >
-
-          <div class="browser-window">
-
-            <div class="browser-bar">
-
-              <div class="browser-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="browser-address">
-                englishwithgabbyec.com
-              </div>
-
-            </div>
-
-            <div class="portfolio-placeholder">
-              <i class="fa-solid fa-graduation-cap"></i>
-
-              <span data-i18n="portfolio.preview">
-                Website Preview
-              </span>
-            </div>
-
-          </div>
-
-          <div class="portfolio-card-info">
-
-            <span
-              class="portfolio-category"
-              data-i18n="portfolio.gabby.category"
-            >
-              Education • Services
-            </span>
-
-            <div class="portfolio-title-row">
-              <h3>English With Gabby</h3>
-              <span class="portfolio-arrow">↗</span>
-            </div>
-
-            <p data-i18n="portfolio.gabby.description">
-              A bilingual educational website built around English
-              classes, educational resources and the personal brand
-              of an independent educator.
-            </p>
-
-          </div>
-
-        </a>
-
-
-
-        <!-- USA CONSEJOS LEGALES -->
-
-        <a
-          href="https://leonfashion.github.io/USA-Consejos-Legales/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="portfolio-card"
-        >
-
-          <div class="browser-window">
-
-            <div class="browser-bar">
-
-              <div class="browser-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="browser-address">
-                USA-Consejos-Legales
-              </div>
-
-            </div>
-
-            <div class="portfolio-placeholder">
-              <i class="fa-solid fa-scale-balanced"></i>
-
-              <span data-i18n="portfolio.preview">
-                Website Preview
-              </span>
-            </div>
-
-          </div>
-
-          <div class="portfolio-card-info">
-
-            <span
-              class="portfolio-category"
-              data-i18n="portfolio.legal.category"
-            >
-              Professional Services
-            </span>
-
-            <div class="portfolio-title-row">
-              <h3>USA Consejos Legales</h3>
-              <span class="portfolio-arrow">↗</span>
-            </div>
-
-            <p data-i18n="portfolio.legal.description">
-              A professional information-focused website structured
-              to organize legal service content and make complex
-              information easier for visitors to navigate.
-            </p>
-
-          </div>
-
-        </a>
-
-
-
-        <!-- CUÉNTAME TU HISTORIA -->
-
-        <a
-          href="https://leonfashion.github.io/Cuentame-Tu-Historia/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="portfolio-card"
-        >
-
-          <div class="browser-window">
-
-            <div class="browser-bar">
-
-              <div class="browser-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="browser-address">
-                Cuentame-Tu-Historia
-              </div>
-
-            </div>
-
-            <div class="portfolio-placeholder">
-              <i class="fa-solid fa-book-open"></i>
-
-              <span data-i18n="portfolio.preview">
-                Website Preview
-              </span>
-            </div>
-
-          </div>
-
-          <div class="portfolio-card-info">
-
-            <span
-              class="portfolio-category"
-              data-i18n="portfolio.cuentame.category"
-            >
-              Product • Storytelling
-            </span>
-
-            <div class="portfolio-title-row">
-              <h3>Cuéntame Tu Historia</h3>
-              <span class="portfolio-arrow">↗</span>
-            </div>
-
-            <p data-i18n="portfolio.cuentame.description">
-              A product-focused digital experience created around
-              a guided storytelling journal designed to preserve
-              memories and family stories.
-            </p>
-
-          </div>
-
-        </a>
-
-
-
-        <!-- GAMELINGO -->
-
-        <a
-          href="https://leonfashion.github.io/GameLingo/index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="portfolio-card"
-        >
-
-          <div class="browser-window">
-
-            <div class="browser-bar">
-
-              <div class="browser-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="browser-address">
-                GameLingo
-              </div>
-
-            </div>
-
-            <div class="portfolio-placeholder">
-              <i class="fa-solid fa-gamepad"></i>
-
-              <span data-i18n="portfolio.preview">
-                Website Preview
-              </span>
-            </div>
-
-          </div>
-
-          <div class="portfolio-card-info">
-
-            <span
-              class="portfolio-category"
-              data-i18n="portfolio.gaming.category"
-            >
-              Community • Reviews
-            </span>
-
-            <div class="portfolio-title-row">
-              <h3>GameLingo</h3>
-              <span class="portfolio-arrow">↗</span>
-            </div>
-
-            <p data-i18n="portfolio.gaming.description">
-              A gaming-focused web project built around discovery,
-              commentary and organized content for an online audience.
-            </p>
-
-          </div>
-
-        </a>
-
-
-
-        <!-- YOUR PROJECT -->
-
-        <a
-          href="contact.html"
-          class="portfolio-card"
-        >
-
-          <div class="browser-window">
-
-            <div class="browser-bar">
-
-              <div class="browser-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="browser-address">
-                yourbusiness.com
-              </div>
-
-            </div>
-
-            <div class="portfolio-placeholder">
-              <i class="fa-solid fa-plus"></i>
-
-              <span data-i18n="portfolio.yours.preview">
-                Your Project Could Be Next
-              </span>
-            </div>
-
-          </div>
-
-          <div class="portfolio-card-info">
-
-            <span
-              class="portfolio-category"
-              data-i18n="portfolio.yours.category"
-            >
-              Your Idea
-            </span>
-
-            <div class="portfolio-title-row">
-              <h3 data-i18n="portfolio.yours.title">
-                Let's Build Yours
-              </h3>
-
-              <span class="portfolio-arrow">→</span>
-            </div>
-
-            <p data-i18n="portfolio.yours.description">
-              Have something different in mind? Digital Studio
-              can build around your business, audience and goals.
-            </p>
-
-          </div>
-
-        </a>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         PROJECT TYPES
-    ========================== -->
-
-    <section class="digital-section">
-
-      <div class="digital-content">
-
-        <div class="digital-copy">
-
-          <span
-            class="section-label light-label"
-            data-i18n="portfolio.range.label"
-          >
-            Built Around the Idea
-          </span>
-
-          <h2 data-i18n="portfolio.range.title">
-            Your business doesn't need to
-            <span>fit into a template.</span>
-          </h2>
-
-          <p data-i18n="portfolio.range.description">
-            Different businesses need different digital experiences.
-            The goal isn't to make every website look the same.
-            It's to create something that makes sense for the people
-            who will actually use it.
-          </p>
-
-        </div>
-
-
-        <div class="digital-list">
-
-          <div>
-            <i class="fa-solid fa-check"></i>
-            <span data-i18n="portfolio.range.retail">
-              Retail & Product Sites
-            </span>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-check"></i>
-            <span data-i18n="portfolio.range.services">
-              Service Businesses
-            </span>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-check"></i>
-            <span data-i18n="portfolio.range.education">
-              Educational Websites
-            </span>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-check"></i>
-            <span data-i18n="portfolio.range.professional">
-              Professional Services
-            </span>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-check"></i>
-            <span data-i18n="portfolio.range.personal">
-              Personal Brands
-            </span>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-check"></i>
-            <span data-i18n="portfolio.range.community">
-              Community Projects
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         CAPABILITIES
-    ========================== -->
-
-    <section class="section services-preview">
-
-      <div class="section-heading">
-
-        <span
-          class="section-label"
-          data-i18n="portfolio.capabilities.label"
-        >
-          Behind the Projects
-        </span>
-
-        <h2 data-i18n="portfolio.capabilities.title">
-          More than making pages look good.
-        </h2>
-
-        <p data-i18n="portfolio.capabilities.description">
-          These projects combine design with the practical tools
-          businesses need to operate online.
-        </p>
-
-      </div>
-
-
-      <div class="services-grid">
-
-        <article class="service-card">
-
-          <div class="service-icon">
-            <i class="fa-solid fa-code"></i>
-          </div>
-
-          <h3 data-i18n="portfolio.capabilities.web.title">
-            Web Design
-          </h3>
-
-          <p data-i18n="portfolio.capabilities.web.description">
-            Structured, responsive websites designed around
-            real content and business needs.
-          </p>
-
-        </article>
-
-
-        <article class="service-card">
-
-          <div class="service-icon">
-            <i class="fa-solid fa-language"></i>
-          </div>
-
-          <h3 data-i18n="portfolio.capabilities.language.title">
-            Bilingual Experiences
-          </h3>
-
-          <p data-i18n="portfolio.capabilities.language.description">
-            English and Spanish interfaces that allow businesses
-            to communicate with a broader audience.
-          </p>
-
-        </article>
-
-
-        <article class="service-card">
-
-          <div class="service-icon">
-            <i class="fa-solid fa-mobile-screen"></i>
-          </div>
-
-          <h3 data-i18n="portfolio.capabilities.mobile.title">
-            Responsive Design
-          </h3>
-
-          <p data-i18n="portfolio.capabilities.mobile.description">
-            Layouts designed to work across desktop,
-            tablet and mobile screens.
-          </p>
-
-        </article>
-
-
-        <article class="service-card">
-
-          <div class="service-icon">
-            <i class="fa-solid fa-link"></i>
-          </div>
-
-          <h3 data-i18n="portfolio.capabilities.integration.title">
-            Platform Integration
-          </h3>
-
-          <p data-i18n="portfolio.capabilities.integration.description">
-            Connections to social media, WhatsApp,
-            booking tools and other digital services.
-          </p>
-
-        </article>
-
-
-        <article class="service-card">
-
-          <div class="service-icon">
-            <i class="fa-solid fa-globe"></i>
-          </div>
-
-          <h3 data-i18n="portfolio.capabilities.domain.title">
-            Custom Domains
-          </h3>
-
-          <p data-i18n="portfolio.capabilities.domain.description">
-            Domain configuration, DNS setup and secure
-            HTTPS website deployment.
-          </p>
-
-        </article>
-
-
-        <article class="service-card">
-
-          <div class="service-icon">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-          </div>
-
-          <h3 data-i18n="portfolio.capabilities.brand.title">
-            Custom Presentation
-          </h3>
-
-          <p data-i18n="portfolio.capabilities.brand.description">
-            Different colors, typography, imagery and layouts
-            built around each project's identity.
-          </p>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FINAL CTA
-    ========================== -->
-
-    <section class="cta-section">
-
-      <div class="cta-content">
-
-        <span
-          class="section-label"
-          data-i18n="portfolio.cta.label"
-        >
-          Your turn.
-        </span>
-
-        <h2 data-i18n="portfolio.cta.title">
-          What should we build next?
-        </h2>
-
-        <p data-i18n="portfolio.cta.description">
-          Whether you already know exactly what you want or only
-          have the beginning of an idea, let's talk about what
-          your project could become.
-        </p>
-
-        <a
-          href="contact.html"
-          class="button button-primary"
-          data-i18n="portfolio.cta.button"
-        >
-          Start a Project
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer class="site-footer">
-
-    <div class="footer-content">
-
-      <div class="footer-brand">
-
-        <a
-          href="index.html"
-          class="brand footer-logo"
-        >
-          <span class="brand-mark">&lt;/&gt;</span>
-          <span>Digital Studio</span>
-        </a>
-
-        <p data-i18n="footer.tagline">
-          Websites, digital presence and business tools
-          built to help ideas grow online.
-        </p>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <div>
-
-          <h4 data-i18n="footer.explore">
-            Explore
-          </h4>
-
-          <a
-            href="index.html"
-            data-i18n="nav.home"
-          >
-            Home
-          </a>
-
-          <a
-            href="services.html"
-            data-i18n="nav.services"
-          >
-            Services
-          </a>
-
-          <a
-            href="portfolio.html"
-            data-i18n="nav.work"
-          >
-            Our Work
-          </a>
-
-        </div>
-
-
-        <div>
-
-          <h4 data-i18n="footer.contact">
-            Get Started
-          </h4>
-
-          <a
-            href="contact.html"
-            data-i18n="nav.start"
-          >
-            Start a Project
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-      <p>
-        © <span id="currentYear"></span> Digital Studio.
-
-        <span data-i18n="footer.rights">
-          All rights reserved.
-        </span>
-      </p>
-
-
-      <div class="footer-language">
-
-        <button
-          class="language-button"
-          data-lang="en"
-          type="button"
-        >
+        <button class="language-button active" data-lang="en" type="button">
           EN
         </button>
 
         <span>/</span>
 
-        <button
-          class="language-button"
-          data-lang="es"
-          type="button"
-        >
+        <button class="language-button" data-lang="es" type="button">
           ES
         </button>
 
@@ -966,12 +90,834 @@
 
     </div>
 
-  </footer>
+  </nav>
+
+</header>
 
 
-  <!-- Translation data MUST load before script.js -->
-  <script src="js/translation.js"></script>
-  <script src="js/script.js"></script>
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-decoration hero-decoration-one"></div>
+  <div class="hero-decoration hero-decoration-two"></div>
+  <div class="hero-decoration hero-decoration-three"></div>
+
+  <div class="hero-content">
+
+    <div class="eyebrow" data-i18n="portfolio.hero.eyebrow">
+      Selected Work
+    </div>
+
+    <h1 data-i18n="portfolio.hero.title">
+      Different ideas.
+      <span>Built for the web.</span>
+    </h1>
+
+    <p
+      class="hero-description"
+      data-i18n="portfolio.hero.description"
+    >
+      Explore real projects created for businesses,
+      professionals, educators, products and online communities.
+      Every project begins with a different goal.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a
+        href="#projects"
+        class="button button-primary"
+        data-i18n="portfolio.hero.button"
+      >
+        Explore Projects
+      </a>
+
+      <a
+        href="contact.html"
+        class="button button-secondary"
+        data-i18n="portfolio.hero.contact"
+      >
+        Build Something Together
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section
+  class="section portfolio-preview"
+  id="projects"
+>
+
+  <div class="section-heading">
+
+    <span
+      class="section-label"
+      data-i18n="portfolio.projects.label"
+    >
+      The Portfolio
+    </span>
+
+    <h2 data-i18n="portfolio.projects.title">
+      One studio. Different kinds of projects.
+    </h2>
+
+    <p data-i18n="portfolio.projects.description">
+      From bridal retail to education and professional services,
+      each project is designed around the needs of the person,
+      business or idea behind it.
+    </p>
+
+  </div>
+
+
+  <div class="portfolio-grid">
+
+
+    <!-- D'LEON -->
+
+    <a
+      href="https://leonfashion.github.io/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="portfolio-card"
+    >
+
+      <div class="browser-window">
+
+        <div class="browser-bar">
+
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="browser-address">
+            leonfashion.github.io
+          </div>
+
+        </div>
+
+
+        <div class="portfolio-logo-preview portfolio-logo-dleon">
+
+          <img
+            src="images/D%27Leon%20Fashion%20Logo.png"
+            alt="D'Leon Designs"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="portfolio-card-info">
+
+        <span
+          class="portfolio-category"
+          data-i18n="portfolio.dleon.category"
+        >
+          Retail • Bridal
+        </span>
+
+        <div class="portfolio-title-row">
+
+          <h3>D'Leon Designs</h3>
+
+          <span class="portfolio-arrow">↗</span>
+
+        </div>
+
+        <p data-i18n="portfolio.dleon.description">
+          A bridal retail experience showcasing wedding dresses,
+          veils, accessories and private bridal services with
+          direct social and WhatsApp connections.
+        </p>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- ENGLISH WITH GABBY -->
+
+    <a
+      href="https://www.englishwithgabbyec.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="portfolio-card"
+    >
+
+      <div class="browser-window">
+
+        <div class="browser-bar">
+
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="browser-address">
+            englishwithgabbyec.com
+          </div>
+
+        </div>
+
+
+        <div class="portfolio-logo-preview portfolio-logo-gabby">
+
+          <img
+            src="images/English%20With%20Gabby%20Logo.png"
+            alt="English With Gabby"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="portfolio-card-info">
+
+        <span
+          class="portfolio-category"
+          data-i18n="portfolio.gabby.category"
+        >
+          Education • Services
+        </span>
+
+        <div class="portfolio-title-row">
+
+          <h3>English With Gabby</h3>
+
+          <span class="portfolio-arrow">↗</span>
+
+        </div>
+
+        <p data-i18n="portfolio.gabby.description">
+          A bilingual educational website built around English
+          classes, educational resources and the personal brand
+          of an independent educator.
+        </p>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- USA CONSEJOS LEGALES -->
+
+    <a
+      href="https://leonfashion.github.io/USA-Consejos-Legales/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="portfolio-card"
+    >
+
+      <div class="browser-window">
+
+        <div class="browser-bar">
+
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="browser-address">
+            USA-Consejos-Legales
+          </div>
+
+        </div>
+
+
+        <div class="portfolio-logo-preview portfolio-logo-legal">
+
+          <img
+            src="images/Servicios%20Legales%20Logo.png"
+            alt="USA Consejos Legales"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="portfolio-card-info">
+
+        <span
+          class="portfolio-category"
+          data-i18n="portfolio.legal.category"
+        >
+          Professional Services
+        </span>
+
+        <div class="portfolio-title-row">
+
+          <h3>USA Consejos Legales</h3>
+
+          <span class="portfolio-arrow">↗</span>
+
+        </div>
+
+        <p data-i18n="portfolio.legal.description">
+          A professional information-focused website structured
+          to organize legal service content and make complex
+          information easier for visitors to navigate.
+        </p>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- CUÉNTAME TU HISTORIA -->
+
+    <a
+      href="https://leonfashion.github.io/Cuentame-Tu-Historia/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="portfolio-card"
+    >
+
+      <div class="browser-window">
+
+        <div class="browser-bar">
+
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="browser-address">
+            Cuentame-Tu-Historia
+          </div>
+
+        </div>
+
+
+        <div class="portfolio-logo-preview portfolio-logo-cuentame">
+
+          <img
+            src="images/Cuentame%20Logo.png"
+            alt="Cuéntame Tu Historia"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="portfolio-card-info">
+
+        <span
+          class="portfolio-category"
+          data-i18n="portfolio.cuentame.category"
+        >
+          Product • Storytelling
+        </span>
+
+        <div class="portfolio-title-row">
+
+          <h3>Cuéntame Tu Historia</h3>
+
+          <span class="portfolio-arrow">↗</span>
+
+        </div>
+
+        <p data-i18n="portfolio.cuentame.description">
+          A product-focused digital experience created around
+          a guided storytelling journal designed to preserve
+          memories and family stories.
+        </p>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- GAMELINGO -->
+
+    <a
+      href="https://leonfashion.github.io/GameLingo/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="portfolio-card"
+    >
+
+      <div class="browser-window">
+
+        <div class="browser-bar">
+
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="browser-address">
+            GameLingo
+          </div>
+
+        </div>
+
+
+        <div class="portfolio-logo-preview portfolio-logo-gamelingo">
+
+          <img
+            src="images/GameLingo%20Logo.png"
+            alt="GameLingo"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="portfolio-card-info">
+
+        <span
+          class="portfolio-category"
+          data-i18n="portfolio.gaming.category"
+        >
+          Community • Reviews
+        </span>
+
+        <div class="portfolio-title-row">
+
+          <h3>GameLingo</h3>
+
+          <span class="portfolio-arrow">↗</span>
+
+        </div>
+
+        <p data-i18n="portfolio.gaming.description">
+          A gaming-focused web project built around discovery,
+          commentary and organized content for an online audience.
+        </p>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- YOUR PROJECT -->
+
+    <a
+      href="contact.html"
+      class="portfolio-card"
+    >
+
+      <div class="browser-window">
+
+        <div class="browser-bar">
+
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="browser-address">
+            yourbusiness.com
+          </div>
+
+        </div>
+
+
+        <div class="portfolio-logo-preview portfolio-logo-next">
+
+          <img
+            src="images/Digital%20Studio%20Logo.png"
+            alt="Your project could be next"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="portfolio-card-info">
+
+        <span
+          class="portfolio-category"
+          data-i18n="portfolio.yours.category"
+        >
+          Your Idea
+        </span>
+
+        <div class="portfolio-title-row">
+
+          <h3 data-i18n="portfolio.yours.title">
+            Let's Build Yours
+          </h3>
+
+          <span class="portfolio-arrow">→</span>
+
+        </div>
+
+        <p data-i18n="portfolio.yours.description">
+          Have something different in mind? Digital Studio
+          can build around your business, audience and goals.
+        </p>
+
+      </div>
+
+    </a>
+
+
+  </div>
+
+</section>
+
+
+
+<section class="digital-section">
+
+  <div class="digital-content">
+
+    <div class="digital-copy">
+
+      <span
+        class="section-label light-label"
+        data-i18n="portfolio.range.label"
+      >
+        Built Around the Idea
+      </span>
+
+      <h2 data-i18n="portfolio.range.title">
+        Your business doesn't need to
+        <span>fit into a template.</span>
+      </h2>
+
+      <p data-i18n="portfolio.range.description">
+        Different businesses need different digital experiences.
+        The goal isn't to make every website look the same.
+        It's to create something that makes sense for the people
+        who will actually use it.
+      </p>
+
+    </div>
+
+
+    <div class="digital-list">
+
+      <div>
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="portfolio.range.retail">Retail & Product Sites</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="portfolio.range.services">Service Businesses</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="portfolio.range.education">Educational Websites</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="portfolio.range.professional">Professional Services</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="portfolio.range.personal">Personal Brands</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="portfolio.range.community">Community Projects</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section services-preview">
+
+  <div class="section-heading">
+
+    <span
+      class="section-label"
+      data-i18n="portfolio.capabilities.label"
+    >
+      Behind the Projects
+    </span>
+
+    <h2 data-i18n="portfolio.capabilities.title">
+      More than making pages look good.
+    </h2>
+
+    <p data-i18n="portfolio.capabilities.description">
+      These projects combine design with the practical tools
+      businesses need to operate online.
+    </p>
+
+  </div>
+
+
+  <div class="services-grid">
+
+
+    <article class="service-card">
+
+      <div class="service-icon">
+        <i class="fa-solid fa-code"></i>
+      </div>
+
+      <h3 data-i18n="portfolio.capabilities.web.title">
+        Web Design
+      </h3>
+
+      <p data-i18n="portfolio.capabilities.web.description">
+        Structured, responsive websites designed around
+        real content and business needs.
+      </p>
+
+    </article>
+
+
+    <article class="service-card">
+
+      <div class="service-icon">
+        <i class="fa-solid fa-language"></i>
+      </div>
+
+      <h3 data-i18n="portfolio.capabilities.language.title">
+        Bilingual Experiences
+      </h3>
+
+      <p data-i18n="portfolio.capabilities.language.description">
+        English and Spanish interfaces that allow businesses
+        to communicate with a broader audience.
+      </p>
+
+    </article>
+
+
+    <article class="service-card">
+
+      <div class="service-icon">
+        <i class="fa-solid fa-mobile-screen"></i>
+      </div>
+
+      <h3 data-i18n="portfolio.capabilities.mobile.title">
+        Responsive Design
+      </h3>
+
+      <p data-i18n="portfolio.capabilities.mobile.description">
+        Layouts designed to work across desktop,
+        tablet and mobile screens.
+      </p>
+
+    </article>
+
+
+    <article class="service-card">
+
+      <div class="service-icon">
+        <i class="fa-solid fa-link"></i>
+      </div>
+
+      <h3 data-i18n="portfolio.capabilities.integration.title">
+        Platform Integration
+      </h3>
+
+      <p data-i18n="portfolio.capabilities.integration.description">
+        Connections to social media, WhatsApp,
+        booking tools and other digital services.
+      </p>
+
+    </article>
+
+
+    <article class="service-card">
+
+      <div class="service-icon">
+        <i class="fa-solid fa-globe"></i>
+      </div>
+
+      <h3 data-i18n="portfolio.capabilities.domain.title">
+        Custom Domains
+      </h3>
+
+      <p data-i18n="portfolio.capabilities.domain.description">
+        Domain configuration, DNS setup and secure
+        HTTPS website deployment.
+      </p>
+
+    </article>
+
+
+    <article class="service-card">
+
+      <div class="service-icon">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </div>
+
+      <h3 data-i18n="portfolio.capabilities.brand.title">
+        Custom Presentation
+      </h3>
+
+      <p data-i18n="portfolio.capabilities.brand.description">
+        Different colors, typography, imagery and layouts
+        built around each project's identity.
+      </p>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<section class="cta-section">
+
+  <div class="cta-content">
+
+    <span
+      class="section-label"
+      data-i18n="portfolio.cta.label"
+    >
+      Your turn.
+    </span>
+
+    <h2 data-i18n="portfolio.cta.title">
+      What should we build next?
+    </h2>
+
+    <p data-i18n="portfolio.cta.description">
+      Whether you already know exactly what you want or only
+      have the beginning of an idea, let's talk about what
+      your project could become.
+    </p>
+
+    <a
+      href="contact.html"
+      class="button button-primary"
+      data-i18n="portfolio.cta.button"
+    >
+      Start a Project
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<footer class="site-footer">
+
+  <div class="footer-content">
+
+    <div class="footer-brand">
+
+      <a href="index.html" class="brand footer-logo">
+
+        <span class="brand-mark">&lt;/&gt;</span>
+
+        <span>Digital Studio</span>
+
+      </a>
+
+      <p data-i18n="footer.tagline">
+        Websites, digital presence and business tools
+        built to help ideas grow online.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <div>
+
+        <h4 data-i18n="footer.explore">
+          Explore
+        </h4>
+
+        <a href="index.html" data-i18n="nav.home">Home</a>
+
+        <a href="services.html" data-i18n="nav.services">Services</a>
+
+        <a href="portfolio.html" data-i18n="nav.work">Our Work</a>
+
+      </div>
+
+
+      <div>
+
+        <h4 data-i18n="footer.contact">
+          Get Started
+        </h4>
+
+        <a href="contact.html" data-i18n="nav.start">
+          Start a Project
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>
+      © <span id="currentYear"></span> Digital Studio.
+
+      <span data-i18n="footer.rights">
+        All rights reserved.
+      </span>
+    </p>
+
+
+    <div class="footer-language">
+
+      <button class="language-button" data-lang="en" type="button">
+        EN
+      </button>
+
+      <span>/</span>
+
+      <button class="language-button" data-lang="es" type="button">
+        ES
+      </button>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="js/translation.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
