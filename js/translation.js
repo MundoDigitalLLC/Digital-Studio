@@ -24,10 +24,11 @@ window.translations = {
 
 
     /* =====================================================
-       SHARED FOOTER
+       FOOTER
     ===================================================== */
 
     footer: {
+
       tagline:
         "Websites, digital presence and business tools built to help ideas grow online.",
 
@@ -39,8 +40,8 @@ window.translations = {
 
       rights:
         "All rights reserved."
-    },
 
+    },
 
 
     /* =====================================================
@@ -50,6 +51,7 @@ window.translations = {
     home: {
 
       hero: {
+
         eyebrow:
           "Websites • Digital Presence • Business Tools",
 
@@ -63,7 +65,30 @@ window.translations = {
           "See Our Work",
 
         projectButton:
-          "Start a Project"
+          "Start a Project",
+
+        tags: {
+
+          websites:
+            "Websites",
+
+          social:
+            "Social Media",
+
+          whatsapp:
+            "WhatsApp",
+
+          google:
+            "Google Business",
+
+          domains:
+            "Domains",
+
+          maintenance:
+            "Maintenance"
+
+        }
+
       },
 
 
@@ -78,56 +103,76 @@ window.translations = {
         description:
           "From your first website to the tools that help customers find and contact your business, we help bring the pieces together.",
 
+
         website: {
+
           title:
             "Website Design",
 
           description:
             "Custom websites designed around your business, audience and goals."
+
         },
 
+
         social: {
+
           title:
             "Social Integration",
 
           description:
             "Connect your website directly to Instagram, Facebook, TikTok and other platforms."
+
         },
 
+
         whatsapp: {
+
           title:
             "WhatsApp Business",
 
           description:
             "Give customers a simple way to contact your business directly from your website."
+
         },
 
+
         google: {
+
           title:
             "Google Business",
 
           description:
             "Build a stronger local presence and help customers discover your business online."
+
         },
 
+
         domain: {
+
           title:
             "Domain & Launch",
 
           description:
             "Connect your domain, configure your website and securely launch it online."
+
         },
 
+
         maintenance: {
+
           title:
             "Updates & Maintenance",
 
           description:
             "Keep your website current with new content, images, services and ongoing improvements."
+
         },
 
+
         more:
-          "Explore all services <span>→</span>"
+          'Explore all services <span>→</span>'
+
       },
 
 
@@ -141,9 +186,6 @@ window.translations = {
 
         description:
           "Explore websites created for businesses, educators, professionals and entrepreneurs.",
-
-        preview:
-          "Project Preview",
 
         retail:
           "Retail & Bridal",
@@ -159,6 +201,7 @@ window.translations = {
 
         button:
           "Explore All Projects"
+
       },
 
 
@@ -190,6 +233,7 @@ window.translations = {
 
         support:
           "Ongoing Support"
+
       },
 
 
@@ -204,45 +248,61 @@ window.translations = {
         description:
           "A straightforward process designed to make launching your digital presence simple.",
 
+
         step1: {
+
           title:
             "Tell us your idea",
 
           description:
             "Tell us about your business, your goals and what you need."
+
         },
 
+
         step2: {
+
           title:
             "We design & build",
 
           description:
             "We turn your ideas into a polished digital experience."
+
         },
 
+
         step3: {
+
           title:
             "You review",
 
           description:
             "Review the project and help us refine the details before launch."
+
         },
 
+
         step4: {
+
           title:
             "We launch",
 
           description:
             "We connect the pieces and get your new digital presence online."
+
         },
 
+
         step5: {
+
           title:
             "We stay available",
 
           description:
             "Need changes later? Your website can continue growing with you."
+
         }
+
       },
 
 
@@ -259,10 +319,10 @@ window.translations = {
 
         button:
           "Start a Project"
+
       }
 
     },
-
 
 
     /* =====================================================
@@ -287,6 +347,7 @@ window.translations = {
 
         workButton:
           "See Our Work"
+
       },
 
 
@@ -301,52 +362,70 @@ window.translations = {
         description:
           "Whether you need a simple landing page or a complete multi-page website, we design around your goals, audience and brand.",
 
+
         website: {
+
           title:
             "Custom Website Design",
 
           description:
             "Professional websites designed around your business, services, products and customer experience."
+
         },
 
+
         landing: {
+
           title:
             "Landing Pages",
 
           description:
             "Focused pages designed to introduce a product, service, campaign or business idea clearly and professionally."
+
         },
 
+
         multipage: {
+
           title:
             "Multi-Page Websites",
 
           description:
             "Complete websites with dedicated pages for services, products, portfolios, contact information and more."
+
         },
 
+
         mobile: {
+
           title:
             "Mobile Optimization",
 
           description:
             "Responsive layouts designed to look polished and function properly across phones, tablets and desktop screens."
+
         },
 
+
         bilingual: {
+
           title:
             "Bilingual Websites",
 
           description:
             "English and Spanish website experiences with seamless language switching across your pages."
+
         },
 
+
         branding: {
+
           title:
             "Visual Brand Integration",
 
           description:
             "Bring your colors, logo, imagery and brand personality together into one consistent online experience."
+
         }
 
       },
@@ -363,36 +442,48 @@ window.translations = {
         description:
           "Your website should connect naturally with the platforms and tools your customers already use.",
 
+
         social: {
+
           title:
             "Social Media Integration",
 
           description:
             "Connect Instagram, Facebook, TikTok and other social platforms directly to your website."
+
         },
 
+
         whatsapp: {
+
           title:
             "WhatsApp Business",
 
           description:
             "Add direct WhatsApp messaging, floating contact buttons and pre-written customer messages."
+
         },
 
+
         booking: {
+
           title:
             "Booking Tools",
 
           description:
             "Connect booking platforms such as Calendly so customers can schedule directly from your website."
+
         },
 
+
         contact: {
+
           title:
             "Contact Tools",
 
           description:
             "Create clear customer pathways through email links, contact sections and inquiry forms."
+
         }
 
       },
@@ -426,6 +517,7 @@ window.translations = {
 
         testing:
           "Pre-Launch Testing"
+
       },
 
 
@@ -440,52 +532,70 @@ window.translations = {
         description:
           "Businesses change. Products change. Services change. We can help keep your website current after launch.",
 
+
         content: {
+
           title:
             "Content Updates",
 
           description:
             "Update wording, prices, business information, service descriptions and other website content."
+
         },
 
+
         images: {
+
           title:
             "Image Updates",
 
           description:
             "Add new photography, products, portfolio images and other visual content as your business grows."
+
         },
 
+
         pages: {
+
           title:
             "New Pages & Sections",
 
           description:
             "Expand your existing website with new services, products, pages or business information."
+
         },
 
+
         links: {
+
           title:
             "Link Maintenance",
 
           description:
             "Keep social links, booking tools, contact information and external resources working correctly."
+
         },
 
+
         design: {
+
           title:
             "Design Improvements",
 
           description:
             "Refine layouts, spacing, colors and visual presentation as your brand evolves."
+
         },
 
+
         support: {
+
           title:
             "Troubleshooting & Support",
 
           description:
             "Help diagnose website issues and make adjustments when something is not working as expected."
+
         }
 
       },
@@ -519,6 +629,7 @@ window.translations = {
 
         email:
           "Your business email"
+
       },
 
 
@@ -535,10 +646,10 @@ window.translations = {
 
         button:
           "Start a Project"
+
       }
 
     },
-
 
 
     /* =====================================================
@@ -563,6 +674,7 @@ window.translations = {
 
         contact:
           "Build Something Together"
+
       },
 
 
@@ -576,11 +688,8 @@ window.translations = {
 
         description:
           "From bridal retail to education and professional services, each project is designed around the needs of the person, business or idea behind it."
+
       },
-
-
-      preview:
-        "Website Preview",
 
 
       dleon: {
@@ -590,6 +699,7 @@ window.translations = {
 
         description:
           "A bridal retail experience showcasing wedding dresses, veils, accessories and private bridal services with direct social and WhatsApp connections."
+
       },
 
 
@@ -600,6 +710,7 @@ window.translations = {
 
         description:
           "A bilingual educational website built around English classes, educational resources and the personal brand of an independent educator."
+
       },
 
 
@@ -610,6 +721,7 @@ window.translations = {
 
         description:
           "A professional information-focused website structured to organize legal service content and make complex information easier for visitors to navigate."
+
       },
 
 
@@ -620,6 +732,7 @@ window.translations = {
 
         description:
           "A product-focused digital experience created around a guided storytelling journal designed to preserve memories and family stories."
+
       },
 
 
@@ -630,13 +743,11 @@ window.translations = {
 
         description:
           "A gaming-focused web project built around discovery, commentary and organized content for an online audience."
+
       },
 
 
       yours: {
-
-        preview:
-          "Your Project Could Be Next",
 
         category:
           "Your Idea",
@@ -646,6 +757,7 @@ window.translations = {
 
         description:
           "Have something different in mind? Digital Studio can build around your business, audience and goals."
+
       },
 
 
@@ -677,6 +789,7 @@ window.translations = {
 
         community:
           "Community Projects"
+
       },
 
 
@@ -691,52 +804,70 @@ window.translations = {
         description:
           "These projects combine design with the practical tools businesses need to operate online.",
 
+
         web: {
+
           title:
             "Web Design",
 
           description:
             "Structured, responsive websites designed around real content and business needs."
+
         },
 
+
         language: {
+
           title:
             "Bilingual Experiences",
 
           description:
             "English and Spanish interfaces that allow businesses to communicate with a broader audience."
+
         },
 
+
         mobile: {
+
           title:
             "Responsive Design",
 
           description:
             "Layouts designed to work across desktop, tablet and mobile screens."
+
         },
 
+
         integration: {
+
           title:
             "Platform Integration",
 
           description:
             "Connections to social media, WhatsApp, booking tools and other digital services."
+
         },
 
+
         domain: {
+
           title:
             "Custom Domains",
 
           description:
             "Domain configuration, DNS setup and secure HTTPS website deployment."
+
         },
 
+
         brand: {
+
           title:
             "Custom Presentation",
 
           description:
             "Different colors, typography, imagery and layouts built around each project's identity."
+
         }
 
       },
@@ -755,10 +886,10 @@ window.translations = {
 
         button:
           "Start a Project"
+
       }
 
     },
-
 
 
     /* =====================================================
@@ -777,6 +908,7 @@ window.translations = {
 
         description:
           "You do not need to know the technical terminology. Tell us about your business, idea or existing website and we'll help identify what makes sense for your project."
+
       },
 
 
@@ -826,6 +958,7 @@ window.translations = {
 
           other:
             "Something Else"
+
         },
 
 
@@ -858,6 +991,7 @@ window.translations = {
 
           unsure:
             "I'm Not Sure Yet"
+
         },
 
 
@@ -875,6 +1009,7 @@ window.translations = {
 
           unsure:
             "I'm Not Sure"
+
         },
 
 
@@ -892,6 +1027,7 @@ window.translations = {
 
           bilingual:
             "English + Spanish"
+
         },
 
 
@@ -906,7 +1042,35 @@ window.translations = {
 
         note:
           "We'll review your project details and follow up with you."
+
       },
+
+
+      placeholders: {
+
+        name:
+          "Your name",
+
+        business:
+          "Business or project name",
+
+        email:
+          "you@example.com",
+
+        whatsapp:
+          "+593...",
+
+        website:
+          "https://",
+
+        message:
+          "Tell us what you're working on..."
+
+      },
+
+
+      whatsappButton:
+        "Chat on WhatsApp",
 
 
       sidebar: {
@@ -928,6 +1092,7 @@ window.translations = {
 
           description:
             "Projects do not need to be fully figured out before the conversation starts."
+
         },
 
 
@@ -938,6 +1103,7 @@ window.translations = {
 
           description:
             "That's okay too. We can explain what you need before your website goes live."
+
         },
 
 
@@ -948,6 +1114,7 @@ window.translations = {
 
           description:
             "Digital Studio can create bilingual website experiences with seamless language switching."
+
         }
 
       },
@@ -981,12 +1148,12 @@ window.translations = {
 
         step6:
           "Ongoing support when needed"
+
       }
 
     }
 
   },
-
 
 
   /* =======================================================
@@ -1000,15 +1167,24 @@ window.translations = {
     ===================================================== */
 
     nav: {
-      home: "Inicio",
-      services: "Servicios",
-      work: "Nuestro Trabajo",
-      start: "Inicia un Proyecto"
+
+      home:
+        "Inicio",
+
+      services:
+        "Servicios",
+
+      work:
+        "Nuestro Trabajo",
+
+      start:
+        "Inicia un Proyecto"
+
     },
 
 
     /* =====================================================
-       SHARED FOOTER
+       FOOTER
     ===================================================== */
 
     footer: {
@@ -1024,8 +1200,8 @@ window.translations = {
 
       rights:
         "Todos los derechos reservados."
-    },
 
+    },
 
 
     /* =====================================================
@@ -1049,7 +1225,31 @@ window.translations = {
           "Ver Nuestro Trabajo",
 
         projectButton:
-          "Inicia un Proyecto"
+          "Inicia un Proyecto",
+
+
+        tags: {
+
+          websites:
+            "Sitios Web",
+
+          social:
+            "Redes Sociales",
+
+          whatsapp:
+            "WhatsApp",
+
+          google:
+            "Perfil de Google",
+
+          domains:
+            "Dominios",
+
+          maintenance:
+            "Mantenimiento"
+
+        }
+
       },
 
 
@@ -1064,6 +1264,7 @@ window.translations = {
         description:
           "Desde tu primer sitio web hasta las herramientas que ayudan a tus clientes a encontrarte y comunicarse contigo, conectamos todas las piezas.",
 
+
         website: {
 
           title:
@@ -1071,7 +1272,9 @@ window.translations = {
 
           description:
             "Sitios web personalizados diseñados alrededor de tu negocio, tu público y tus objetivos."
+
         },
+
 
         social: {
 
@@ -1080,7 +1283,9 @@ window.translations = {
 
           description:
             "Conecta tu sitio directamente con Instagram, Facebook, TikTok y otras plataformas."
+
         },
+
 
         whatsapp: {
 
@@ -1089,7 +1294,9 @@ window.translations = {
 
           description:
             "Facilita que tus clientes se comuniquen directamente con tu negocio desde tu sitio web."
+
         },
+
 
         google: {
 
@@ -1098,7 +1305,9 @@ window.translations = {
 
           description:
             "Fortalece tu presencia local y ayuda a que nuevos clientes encuentren tu negocio en línea."
+
         },
+
 
         domain: {
 
@@ -1107,7 +1316,9 @@ window.translations = {
 
           description:
             "Conectamos tu dominio, configuramos tu sitio web y lo lanzamos de forma segura."
+
         },
+
 
         maintenance: {
 
@@ -1116,10 +1327,13 @@ window.translations = {
 
           description:
             "Mantén tu sitio actualizado con nuevo contenido, imágenes, servicios y mejoras continuas."
+
         },
 
+
         more:
-          "Explorar todos los servicios <span>→</span>"
+          'Explorar todos los servicios <span>→</span>'
+
       },
 
 
@@ -1133,9 +1347,6 @@ window.translations = {
 
         description:
           "Explora sitios creados para negocios, educadores, profesionales y emprendedores.",
-
-        preview:
-          "Vista del Proyecto",
 
         retail:
           "Retail y Bridal",
@@ -1151,6 +1362,7 @@ window.translations = {
 
         button:
           "Explorar Todos los Proyectos"
+
       },
 
 
@@ -1182,6 +1394,7 @@ window.translations = {
 
         support:
           "Soporte Continuo"
+
       },
 
 
@@ -1196,6 +1409,7 @@ window.translations = {
         description:
           "Un proceso sencillo diseñado para facilitar el lanzamiento de tu presencia digital.",
 
+
         step1: {
 
           title:
@@ -1203,7 +1417,9 @@ window.translations = {
 
           description:
             "Cuéntanos sobre tu negocio, tus objetivos y lo que necesitas."
+
         },
+
 
         step2: {
 
@@ -1212,7 +1428,9 @@ window.translations = {
 
           description:
             "Transformamos tus ideas en una experiencia digital profesional."
+
         },
+
 
         step3: {
 
@@ -1221,7 +1439,9 @@ window.translations = {
 
           description:
             "Revisas el proyecto y trabajamos juntos para perfeccionar los detalles antes del lanzamiento."
+
         },
+
 
         step4: {
 
@@ -1230,7 +1450,9 @@ window.translations = {
 
           description:
             "Conectamos todas las piezas y ponemos tu nueva presencia digital en línea."
+
         },
+
 
         step5: {
 
@@ -1239,6 +1461,7 @@ window.translations = {
 
           description:
             "¿Necesitas cambios después? Tu sitio puede seguir creciendo junto con tu negocio."
+
         }
 
       },
@@ -1257,10 +1480,10 @@ window.translations = {
 
         button:
           "Inicia un Proyecto"
+
       }
 
     },
-
 
 
     /* =====================================================
@@ -1285,6 +1508,7 @@ window.translations = {
 
         workButton:
           "Ver Nuestro Trabajo"
+
       },
 
 
@@ -1299,6 +1523,7 @@ window.translations = {
         description:
           "Ya sea que necesites una página sencilla o un sitio completo con múltiples secciones, diseñamos en función de tus objetivos, público y marca.",
 
+
         website: {
 
           title:
@@ -1306,7 +1531,9 @@ window.translations = {
 
           description:
             "Sitios profesionales diseñados alrededor de tu negocio, servicios, productos y experiencia del cliente."
+
         },
+
 
         landing: {
 
@@ -1315,7 +1542,9 @@ window.translations = {
 
           description:
             "Páginas enfocadas en presentar claramente un producto, servicio, campaña o idea empresarial."
+
         },
+
 
         multipage: {
 
@@ -1324,7 +1553,9 @@ window.translations = {
 
           description:
             "Sitios completos con páginas dedicadas a servicios, productos, portafolios, información de contacto y más."
+
         },
+
 
         mobile: {
 
@@ -1333,7 +1564,9 @@ window.translations = {
 
           description:
             "Diseños responsivos creados para verse y funcionar correctamente en teléfonos, tablets y computadoras."
+
         },
+
 
         bilingual: {
 
@@ -1342,7 +1575,9 @@ window.translations = {
 
           description:
             "Experiencias en inglés y español con cambio fluido de idioma en todas las páginas."
+
         },
+
 
         branding: {
 
@@ -1351,6 +1586,7 @@ window.translations = {
 
           description:
             "Integramos tus colores, logo, imágenes y personalidad de marca en una experiencia digital coherente."
+
         }
 
       },
@@ -1367,6 +1603,7 @@ window.translations = {
         description:
           "Tu sitio debe conectarse naturalmente con las plataformas y herramientas que tus clientes ya utilizan.",
 
+
         social: {
 
           title:
@@ -1374,7 +1611,9 @@ window.translations = {
 
           description:
             "Conecta Instagram, Facebook, TikTok y otras plataformas directamente con tu sitio web."
+
         },
+
 
         whatsapp: {
 
@@ -1383,7 +1622,9 @@ window.translations = {
 
           description:
             "Agrega mensajería directa por WhatsApp, botones flotantes y mensajes predeterminados para clientes."
+
         },
+
 
         booking: {
 
@@ -1392,7 +1633,9 @@ window.translations = {
 
           description:
             "Conecta plataformas como Calendly para que tus clientes puedan reservar directamente desde tu sitio."
+
         },
+
 
         contact: {
 
@@ -1401,6 +1644,7 @@ window.translations = {
 
           description:
             "Crea vías claras de comunicación mediante correo electrónico, formularios y secciones de contacto."
+
         }
 
       },
@@ -1434,6 +1678,7 @@ window.translations = {
 
         testing:
           "Pruebas Antes del Lanzamiento"
+
       },
 
 
@@ -1448,6 +1693,7 @@ window.translations = {
         description:
           "Los negocios cambian. Los productos cambian. Los servicios cambian. Podemos ayudarte a mantener tu sitio actualizado después del lanzamiento.",
 
+
         content: {
 
           title:
@@ -1455,7 +1701,9 @@ window.translations = {
 
           description:
             "Actualiza textos, precios, información del negocio, servicios y demás contenido del sitio."
+
         },
+
 
         images: {
 
@@ -1464,7 +1712,9 @@ window.translations = {
 
           description:
             "Agrega nuevas fotografías, productos, imágenes de portafolio y otros elementos visuales a medida que tu negocio crece."
+
         },
+
 
         pages: {
 
@@ -1473,7 +1723,9 @@ window.translations = {
 
           description:
             "Amplía tu sitio existente con nuevos servicios, productos, páginas o información."
+
         },
+
 
         links: {
 
@@ -1482,7 +1734,9 @@ window.translations = {
 
           description:
             "Mantén funcionando correctamente tus enlaces sociales, herramientas de reservación, información de contacto y recursos externos."
+
         },
+
 
         design: {
 
@@ -1491,7 +1745,9 @@ window.translations = {
 
           description:
             "Refina diseños, espacios, colores y presentación visual a medida que evoluciona tu marca."
+
         },
+
 
         support: {
 
@@ -1500,6 +1756,7 @@ window.translations = {
 
           description:
             "Ayudamos a identificar problemas del sitio y realizar ajustes cuando algo no funciona como debería."
+
         }
 
       },
@@ -1533,6 +1790,7 @@ window.translations = {
 
         email:
           "Tu correo empresarial"
+
       },
 
 
@@ -1549,10 +1807,10 @@ window.translations = {
 
         button:
           "Inicia un Proyecto"
+
       }
 
     },
-
 
 
     /* =====================================================
@@ -1577,6 +1835,7 @@ window.translations = {
 
         contact:
           "Construyamos Algo Juntos"
+
       },
 
 
@@ -1590,11 +1849,8 @@ window.translations = {
 
         description:
           "Desde boutiques bridal hasta educación y servicios profesionales, cada proyecto se diseña alrededor de las necesidades de la persona, negocio o idea detrás de él."
+
       },
-
-
-      preview:
-        "Vista del Sitio",
 
 
       dleon: {
@@ -1604,6 +1860,7 @@ window.translations = {
 
         description:
           "Una experiencia digital para una boutique bridal que presenta vestidos, velos, accesorios y servicios privados con conexiones directas a redes sociales y WhatsApp."
+
       },
 
 
@@ -1614,6 +1871,7 @@ window.translations = {
 
         description:
           "Un sitio educativo bilingüe enfocado en clases de inglés, recursos educativos y la marca personal de una educadora independiente."
+
       },
 
 
@@ -1624,6 +1882,7 @@ window.translations = {
 
         description:
           "Un sitio informativo profesional estructurado para organizar contenido legal y facilitar la navegación de información compleja."
+
       },
 
 
@@ -1634,6 +1893,7 @@ window.translations = {
 
         description:
           "Una experiencia digital enfocada en un diario guiado diseñado para preservar recuerdos e historias familiares."
+
       },
 
 
@@ -1644,13 +1904,11 @@ window.translations = {
 
         description:
           "Un proyecto web enfocado en videojuegos, descubrimiento, comentarios y contenido organizado para una comunidad digital."
+
       },
 
 
       yours: {
-
-        preview:
-          "Tu Proyecto Puede Ser el Próximo",
 
         category:
           "Tu Idea",
@@ -1660,6 +1918,7 @@ window.translations = {
 
         description:
           "¿Tienes algo diferente en mente? Digital Studio puede construir alrededor de tu negocio, tu audiencia y tus objetivos."
+
       },
 
 
@@ -1691,6 +1950,7 @@ window.translations = {
 
         community:
           "Proyectos Comunitarios"
+
       },
 
 
@@ -1705,6 +1965,7 @@ window.translations = {
         description:
           "Estos proyectos combinan diseño con las herramientas prácticas que los negocios necesitan para funcionar en línea.",
 
+
         web: {
 
           title:
@@ -1712,7 +1973,9 @@ window.translations = {
 
           description:
             "Sitios estructurados y responsivos diseñados alrededor de contenido y necesidades reales."
+
         },
+
 
         language: {
 
@@ -1721,7 +1984,9 @@ window.translations = {
 
           description:
             "Interfaces en inglés y español que permiten a los negocios comunicarse con una audiencia más amplia."
+
         },
+
 
         mobile: {
 
@@ -1730,7 +1995,9 @@ window.translations = {
 
           description:
             "Diseños creados para funcionar correctamente en computadoras, tablets y teléfonos."
+
         },
+
 
         integration: {
 
@@ -1739,7 +2006,9 @@ window.translations = {
 
           description:
             "Conexiones con redes sociales, WhatsApp, herramientas de reservación y otros servicios digitales."
+
         },
+
 
         domain: {
 
@@ -1748,7 +2017,9 @@ window.translations = {
 
           description:
             "Configuración de dominio, DNS y publicación segura mediante HTTPS."
+
         },
+
 
         brand: {
 
@@ -1757,6 +2028,7 @@ window.translations = {
 
           description:
             "Colores, tipografías, imágenes y diseños diferentes creados alrededor de la identidad de cada proyecto."
+
         }
 
       },
@@ -1775,10 +2047,10 @@ window.translations = {
 
         button:
           "Inicia un Proyecto"
+
       }
 
     },
-
 
 
     /* =====================================================
@@ -1797,6 +2069,7 @@ window.translations = {
 
         description:
           "No necesitas conocer la terminología técnica. Cuéntanos sobre tu negocio, idea o sitio actual y te ayudaremos a identificar qué tiene sentido para tu proyecto."
+
       },
 
 
@@ -1846,6 +2119,7 @@ window.translations = {
 
           other:
             "Otro"
+
         },
 
 
@@ -1878,6 +2152,7 @@ window.translations = {
 
           unsure:
             "Todavía No Estoy Seguro"
+
         },
 
 
@@ -1895,6 +2170,7 @@ window.translations = {
 
           unsure:
             "No Estoy Seguro"
+
         },
 
 
@@ -1912,6 +2188,7 @@ window.translations = {
 
           bilingual:
             "Inglés + Español"
+
         },
 
 
@@ -1926,7 +2203,35 @@ window.translations = {
 
         note:
           "Revisaremos los detalles de tu proyecto y nos comunicaremos contigo."
+
       },
+
+
+      placeholders: {
+
+        name:
+          "Tu nombre",
+
+        business:
+          "Nombre del negocio o proyecto",
+
+        email:
+          "tu@correo.com",
+
+        whatsapp:
+          "+593...",
+
+        website:
+          "https://",
+
+        message:
+          "Cuéntanos en qué estás trabajando..."
+
+      },
+
+
+      whatsappButton:
+        "Escríbenos por WhatsApp",
 
 
       sidebar: {
@@ -1948,6 +2253,7 @@ window.translations = {
 
           description:
             "No necesitas tener todos los detalles definidos antes de comenzar la conversación."
+
         },
 
 
@@ -1958,6 +2264,7 @@ window.translations = {
 
           description:
             "No hay problema. Podemos explicarte qué necesitas antes de lanzar tu sitio."
+
         },
 
 
@@ -1968,6 +2275,7 @@ window.translations = {
 
           description:
             "Digital Studio puede crear experiencias bilingües con cambio fluido entre idiomas."
+
         }
 
       },
@@ -2001,6 +2309,7 @@ window.translations = {
 
         step6:
           "Soporte continuo cuando lo necesites"
+
       }
 
     }
