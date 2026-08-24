@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -11,11 +12,12 @@
 
   <meta
     name="description"
-    content="Start a project with Digital Studio. Tell us what you need and explore website design, digital setup, social integration and ongoing support."
+    content="Inicia un proyecto con Digital Studio. Cuéntanos sobre tu negocio, idea o sitio web y te ayudaremos a definir una presencia digital clara y funcional."
   >
 
-  <title>Start a Project | Digital Studio</title>
+  <title>Inicia un Proyecto | Digital Studio</title>
 
+  <!-- Favicon -->
   <link
     rel="icon"
     type="image/png"
@@ -23,11 +25,22 @@
   >
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
@@ -39,20 +52,25 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   >
+
 </head>
 
 
 <body>
 
-  <!-- =========================
+
+  <!-- =====================================================
        HEADER / NAVIGATION
-  ========================== -->
+  ====================================================== -->
 
   <header class="site-header">
 
     <nav class="navbar">
 
-      <a href="index.html" class="brand">
+      <a
+        href="index.html"
+        class="brand"
+      >
         <span class="brand-mark">&lt;/&gt;</span>
         <span>Digital Studio</span>
       </a>
@@ -78,7 +96,7 @@
           class="nav-link"
           data-i18n="nav.home"
         >
-          Home
+          Inicio
         </a>
 
         <a
@@ -86,7 +104,7 @@
           class="nav-link"
           data-i18n="nav.services"
         >
-          Services
+          Servicios
         </a>
 
         <a
@@ -94,7 +112,15 @@
           class="nav-link"
           data-i18n="nav.work"
         >
-          Our Work
+          Nuestro Trabajo
+        </a>
+
+        <a
+          href="about.html"
+          class="nav-link"
+          data-i18n="nav.about"
+        >
+          Sobre David
         </a>
 
         <a
@@ -102,14 +128,14 @@
           class="nav-link nav-cta active"
           data-i18n="nav.start"
         >
-          Start a Project
+          Inicia un Proyecto
         </a>
 
 
         <div class="language-switcher">
 
           <button
-            class="language-button active"
+            class="language-button"
             data-lang="en"
             type="button"
           >
@@ -119,7 +145,7 @@
           <span>/</span>
 
           <button
-            class="language-button"
+            class="language-button active"
             data-lang="es"
             type="button"
           >
@@ -138,9 +164,10 @@
 
   <main>
 
-    <!-- =========================
+
+    <!-- ===================================================
          CONTACT HERO
-    ========================== -->
+    ==================================================== -->
 
     <section class="hero">
 
@@ -155,13 +182,13 @@
           class="eyebrow"
           data-i18n="contact.hero.eyebrow"
         >
-          Start a Project
+          Inicia un Proyecto
         </div>
 
 
         <h1 data-i18n="contact.hero.title">
-          Tell us what you're
-          <span>working on.</span>
+          Cuéntanos en qué estás
+          <span>trabajando.</span>
         </h1>
 
 
@@ -169,9 +196,10 @@
           class="hero-description"
           data-i18n="contact.hero.description"
         >
-          You do not need to know the technical terminology.
-          Tell us about your business, idea or existing website
-          and we'll help identify what makes sense for your project.
+          No necesitas conocer la terminología técnica.
+          Cuéntanos sobre tu negocio, idea o sitio actual
+          y te ayudaremos a identificar qué tiene sentido
+          para tu proyecto.
         </p>
 
       </div>
@@ -180,9 +208,9 @@
 
 
 
-    <!-- =========================
+    <!-- ===================================================
          PROJECT INTAKE
-    ========================== -->
+    ==================================================== -->
 
     <section class="section">
 
@@ -192,18 +220,18 @@
           class="section-label"
           data-i18n="contact.form.label"
         >
-          Project Intake
+          Información del Proyecto
         </span>
 
 
         <h2 data-i18n="contact.form.title">
-          Let's start with the basics.
+          Comencemos con lo básico.
         </h2>
 
 
         <p data-i18n="contact.form.description">
-          Share as much or as little as you know right now.
-          We can work through the rest together.
+          Comparte toda la información que tengas en este momento.
+          Podemos definir el resto juntos.
         </p>
 
       </div>
@@ -212,14 +240,16 @@
 
       <div class="contact-layout">
 
-        <!-- =========================
+
+        <!-- =================================================
              FORM
-        ========================== -->
+        ================================================== -->
 
         <form
           class="project-form"
           id="projectForm"
         >
+
 
           <!-- NAME -->
 
@@ -229,14 +259,14 @@
               for="name"
               data-i18n="contact.form.name"
             >
-              Your name
+              Tu nombre
             </label>
 
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Your name"
+              placeholder="Tu nombre"
               data-i18n-placeholder="contact.placeholders.name"
               required
             >
@@ -253,14 +283,14 @@
               for="business"
               data-i18n="contact.form.business"
             >
-              Business or project name
+              Nombre del negocio o proyecto
             </label>
 
             <input
               type="text"
               id="business"
               name="business"
-              placeholder="Business or project name"
+              placeholder="Nombre del negocio o proyecto"
               data-i18n-placeholder="contact.placeholders.business"
             >
 
@@ -276,14 +306,14 @@
               for="email"
               data-i18n="contact.form.email"
             >
-              Email
+              Correo electrónico
             </label>
 
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="you@example.com"
+              placeholder="tu@correo.com"
               data-i18n-placeholder="contact.placeholders.email"
               required
             >
@@ -292,7 +322,7 @@
 
 
 
-          <!-- WHATSAPP -->
+          <!-- WHATSAPP / PHONE -->
 
           <div class="form-group">
 
@@ -300,7 +330,7 @@
               for="whatsapp"
               data-i18n="contact.form.whatsapp"
             >
-              WhatsApp or phone number
+              WhatsApp o número de teléfono
             </label>
 
             <input
@@ -320,13 +350,14 @@
           <fieldset class="form-group">
 
             <legend data-i18n="contact.form.projectType">
-              What kind of project is this?
+              ¿Qué tipo de proyecto es?
             </legend>
 
 
             <div class="option-grid">
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="project_type"
@@ -334,12 +365,14 @@
                 >
 
                 <span data-i18n="contact.form.types.retail">
-                  Retail / Product
+                  Retail / Producto
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="project_type"
@@ -347,12 +380,14 @@
                 >
 
                 <span data-i18n="contact.form.types.services">
-                  Professional Services
+                  Servicios Profesionales
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="project_type"
@@ -360,12 +395,14 @@
                 >
 
                 <span data-i18n="contact.form.types.education">
-                  Education
+                  Educación
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="project_type"
@@ -373,12 +410,14 @@
                 >
 
                 <span data-i18n="contact.form.types.creator">
-                  Creator / Personal Brand
+                  Creador / Marca Personal
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="project_type"
@@ -386,12 +425,14 @@
                 >
 
                 <span data-i18n="contact.form.types.community">
-                  Community / Content
+                  Comunidad / Contenido
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="project_type"
@@ -399,8 +440,9 @@
                 >
 
                 <span data-i18n="contact.form.types.other">
-                  Something Else
+                  Otro
                 </span>
+
               </label>
 
             </div>
@@ -414,13 +456,15 @@
           <fieldset class="form-group">
 
             <legend data-i18n="contact.form.servicesNeeded">
-              What do you need help with?
+              ¿Con qué necesitas ayuda?
             </legend>
 
 
             <div class="option-grid">
 
+
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -428,12 +472,14 @@
                 >
 
                 <span data-i18n="contact.form.services.website">
-                  New Website
+                  Nuevo Sitio Web
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -441,12 +487,14 @@
                 >
 
                 <span data-i18n="contact.form.services.update">
-                  Existing Website Update
+                  Actualizar un Sitio Existente
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -454,12 +502,14 @@
                 >
 
                 <span data-i18n="contact.form.services.social">
-                  Social Media Integration
+                  Integración de Redes Sociales
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -469,10 +519,12 @@
                 <span data-i18n="contact.form.services.whatsapp">
                   WhatsApp Business
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -480,12 +532,14 @@
                 >
 
                 <span data-i18n="contact.form.services.google">
-                  Google Business Profile
+                  Perfil de Negocio en Google
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -493,12 +547,14 @@
                 >
 
                 <span data-i18n="contact.form.services.domain">
-                  Domain & Launch Setup
+                  Dominio y Lanzamiento
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -506,12 +562,14 @@
                 >
 
                 <span data-i18n="contact.form.services.maintenance">
-                  Ongoing Maintenance
+                  Mantenimiento Continuo
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="checkbox"
                   name="services"
@@ -519,8 +577,9 @@
                 >
 
                 <span data-i18n="contact.form.services.unsure">
-                  I'm Not Sure Yet
+                  Todavía No Estoy Seguro
                 </span>
+
               </label>
 
             </div>
@@ -534,13 +593,14 @@
           <fieldset class="form-group">
 
             <legend data-i18n="contact.form.domain">
-              Do you already own a domain?
+              ¿Ya tienes un dominio?
             </legend>
 
 
             <div class="option-grid option-grid-three">
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="domain"
@@ -548,12 +608,14 @@
                 >
 
                 <span data-i18n="contact.form.answers.yes">
-                  Yes
+                  Sí
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="domain"
@@ -563,10 +625,12 @@
                 <span data-i18n="contact.form.answers.no">
                   No
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="domain"
@@ -574,8 +638,9 @@
                 >
 
                 <span data-i18n="contact.form.answers.unsure">
-                  I'm Not Sure
+                  No Estoy Seguro
                 </span>
+
               </label>
 
             </div>
@@ -589,13 +654,14 @@
           <fieldset class="form-group">
 
             <legend data-i18n="contact.form.language">
-              What language should the website use?
+              ¿En qué idioma debe estar el sitio?
             </legend>
 
 
             <div class="option-grid option-grid-three">
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="language"
@@ -603,12 +669,14 @@
                 >
 
                 <span data-i18n="contact.form.languages.english">
-                  English
+                  Inglés
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="language"
@@ -616,12 +684,14 @@
                 >
 
                 <span data-i18n="contact.form.languages.spanish">
-                  Spanish
+                  Español
                 </span>
+
               </label>
 
 
               <label class="option-card">
+
                 <input
                   type="radio"
                   name="language"
@@ -629,8 +699,9 @@
                 >
 
                 <span data-i18n="contact.form.languages.bilingual">
-                  English + Spanish
+                  Inglés + Español
                 </span>
+
               </label>
 
             </div>
@@ -639,7 +710,7 @@
 
 
 
-          <!-- CURRENT WEBSITE -->
+          <!-- EXISTING WEBSITE -->
 
           <div class="form-group">
 
@@ -647,7 +718,7 @@
               for="website"
               data-i18n="contact.form.website"
             >
-              Existing website or social page
+              Sitio web o red social existente
             </label>
 
             <input
@@ -662,7 +733,7 @@
 
 
 
-          <!-- MESSAGE -->
+          <!-- PROJECT MESSAGE -->
 
           <div class="form-group">
 
@@ -670,14 +741,14 @@
               for="message"
               data-i18n="contact.form.message"
             >
-              Tell us about your idea
+              Cuéntanos sobre tu idea
             </label>
 
             <textarea
               id="message"
               name="message"
               rows="7"
-              placeholder="Tell us what you're working on..."
+              placeholder="Cuéntanos en qué estás trabajando..."
               data-i18n-placeholder="contact.placeholders.message"
               required
             ></textarea>
@@ -695,7 +766,7 @@
               class="button button-primary"
               data-i18n="contact.form.submit"
             >
-              Send My Project
+              Enviar Mi Proyecto
             </button>
 
 
@@ -703,7 +774,8 @@
               class="form-note"
               data-i18n="contact.form.note"
             >
-              We'll review your project details and follow up with you.
+              Revisaremos los detalles de tu proyecto
+              y nos comunicaremos contigo.
             </p>
 
           </div>
@@ -712,14 +784,14 @@
 
 
 
-        <!-- =========================
-             CONTACT SIDEBAR
-        ========================== -->
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
 
         <aside class="contact-sidebar">
 
 
-          <!-- FIRST SIDEBAR CARD -->
+          <!-- WHATSAPP CARD -->
 
           <div class="contact-sidebar-card">
 
@@ -727,20 +799,20 @@
               class="section-label"
               data-i18n="contact.sidebar.label"
             >
-              Not Sure Where to Start?
+              ¿No Sabes Por Dónde Empezar?
             </span>
 
 
             <h3 data-i18n="contact.sidebar.title">
-              That's completely fine.
+              No hay problema.
             </h3>
 
 
             <p data-i18n="contact.sidebar.description">
-              You do not need to know what hosting, DNS,
-              responsive design or integrations mean.
-              Tell us what you want your business to do online
-              and we can help work through the rest.
+              No necesitas saber qué significan hosting,
+              DNS, diseño responsivo o integraciones.
+              Cuéntanos qué quieres que tu negocio pueda hacer
+              en línea y podemos ayudarte con el resto.
             </p>
 
 
@@ -753,7 +825,7 @@
               <i class="fa-brands fa-whatsapp"></i>
 
               <span data-i18n="contact.whatsappButton">
-                Chat on WhatsApp
+                Escríbenos por WhatsApp
               </span>
             </a>
 
@@ -771,13 +843,13 @@
 
 
             <h3 data-i18n="contact.sidebar.idea.title">
-              Have an early-stage idea?
+              ¿Tu idea apenas está comenzando?
             </h3>
 
 
             <p data-i18n="contact.sidebar.idea.description">
-              Projects do not need to be fully figured out
-              before the conversation starts.
+              No necesitas tener todos los detalles definidos
+              antes de comenzar la conversación.
             </p>
 
           </div>
@@ -794,13 +866,13 @@
 
 
             <h3 data-i18n="contact.sidebar.domain.title">
-              Don't have a domain yet?
+              ¿Todavía no tienes dominio?
             </h3>
 
 
             <p data-i18n="contact.sidebar.domain.description">
-              That's okay too. We can explain what you need
-              before your website goes live.
+              No hay problema. Podemos explicarte qué necesitas
+              antes de lanzar tu sitio.
             </p>
 
           </div>
@@ -817,17 +889,16 @@
 
 
             <h3 data-i18n="contact.sidebar.bilingual.title">
-              Need English and Spanish?
+              ¿Necesitas inglés y español?
             </h3>
 
 
             <p data-i18n="contact.sidebar.bilingual.description">
-              Digital Studio can create bilingual website
-              experiences with seamless language switching.
+              Digital Studio puede crear experiencias bilingües
+              con cambio fluido entre idiomas.
             </p>
 
           </div>
-
 
         </aside>
 
@@ -837,13 +908,14 @@
 
 
 
-    <!-- =========================
-         PROCESS REMINDER
-    ========================== -->
+    <!-- ===================================================
+         WHAT HAPPENS NEXT
+    ==================================================== -->
 
     <section class="digital-section">
 
       <div class="digital-content">
+
 
         <div class="digital-copy">
 
@@ -851,23 +923,25 @@
             class="section-label light-label"
             data-i18n="contact.next.label"
           >
-            What Happens Next?
+            ¿Qué Sigue?
           </span>
 
 
           <h2 data-i18n="contact.next.title">
-            Simple conversations.
-            <span>Clear next steps.</span>
+            Conversaciones sencillas.
+            <span>Próximos pasos claros.</span>
           </h2>
 
 
           <p data-i18n="contact.next.description">
-            Once we understand what you're trying to accomplish,
-            we can discuss the project scope, what tools make sense
-            and what would be required to bring it online.
+            Una vez que entendamos lo que quieres lograr,
+            podemos conversar sobre el alcance del proyecto,
+            las herramientas que tienen sentido y lo necesario
+            para llevarlo al mundo digital.
           </p>
 
         </div>
+
 
 
         <div class="digital-list">
@@ -876,7 +950,7 @@
             <i class="fa-solid fa-1"></i>
 
             <span data-i18n="contact.next.step1">
-              Share your idea
+              Comparte tu idea
             </span>
           </div>
 
@@ -885,7 +959,7 @@
             <i class="fa-solid fa-2"></i>
 
             <span data-i18n="contact.next.step2">
-              Review your needs
+              Revisamos tus necesidades
             </span>
           </div>
 
@@ -894,7 +968,7 @@
             <i class="fa-solid fa-3"></i>
 
             <span data-i18n="contact.next.step3">
-              Define the project
+              Definimos el proyecto
             </span>
           </div>
 
@@ -903,7 +977,7 @@
             <i class="fa-solid fa-4"></i>
 
             <span data-i18n="contact.next.step4">
-              Build & review
+              Construimos y revisamos
             </span>
           </div>
 
@@ -912,7 +986,7 @@
             <i class="fa-solid fa-5"></i>
 
             <span data-i18n="contact.next.step5">
-              Launch
+              Lanzamiento
             </span>
           </div>
 
@@ -921,7 +995,7 @@
             <i class="fa-solid fa-check"></i>
 
             <span data-i18n="contact.next.step6">
-              Ongoing support when needed
+              Soporte continuo cuando lo necesites
             </span>
           </div>
 
@@ -935,9 +1009,9 @@
 
 
 
-  <!-- =========================
+  <!-- =====================================================
        FOOTER
-  ========================== -->
+  ====================================================== -->
 
   <footer class="site-footer">
 
@@ -956,68 +1030,75 @@
 
 
         <p data-i18n="footer.tagline">
-          Websites, digital presence and business tools
-          built to help ideas grow online.
+          Sitios web, presencia digital y herramientas empresariales
+          creadas para ayudar a que tus ideas crezcan en línea.
         </p>
 
       </div>
 
 
-
       <div class="footer-links">
-
 
         <div>
 
           <h4 data-i18n="footer.explore">
-            Explore
+            Explora
           </h4>
+
 
           <a
             href="index.html"
             data-i18n="nav.home"
           >
-            Home
+            Inicio
           </a>
+
 
           <a
             href="services.html"
             data-i18n="nav.services"
           >
-            Services
+            Servicios
           </a>
+
 
           <a
             href="portfolio.html"
             data-i18n="nav.work"
           >
-            Our Work
+            Nuestro Trabajo
+          </a>
+
+
+          <a
+            href="about.html"
+            data-i18n="nav.about"
+          >
+            Sobre David
           </a>
 
         </div>
-
 
 
         <div>
 
           <h4 data-i18n="footer.contact">
-            Get Started
+            Comencemos
           </h4>
+
 
           <a
             href="contact.html"
             data-i18n="nav.start"
           >
-            Start a Project
+            Inicia un Proyecto
           </a>
 
         </div>
 
-
       </div>
 
     </div>
-
 
 
     <div class="footer-bottom">
@@ -1026,7 +1107,7 @@
         © <span id="currentYear"></span> Digital Studio.
 
         <span data-i18n="footer.rights">
-          All rights reserved.
+          Todos los derechos reservados.
         </span>
       </p>
 
@@ -1044,7 +1125,7 @@
         <span>/</span>
 
         <button
-          class="language-button"
+          class="language-button active"
           data-lang="es"
           type="button"
         >
@@ -1059,9 +1140,9 @@
 
 
 
-  <!-- =========================
+  <!-- =====================================================
        FLOATING WHATSAPP
-  ========================== -->
+  ====================================================== -->
 
   <a
     class="floating-whatsapp"
@@ -1075,10 +1156,13 @@
 
 
 
-  <!-- Translation data MUST load before script.js -->
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
 
   <script src="js/translation.js"></script>
   <script src="js/script.js"></script>
+
 
 </body>
 
