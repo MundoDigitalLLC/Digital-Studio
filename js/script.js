@@ -3,19 +3,26 @@
    MAIN JAVASCRIPT
 ========================================================= */
 
-
 document.addEventListener("DOMContentLoaded", () => {
+
 
   /* =======================================================
      CURRENT YEAR
   ======================================================= */
 
-  const yearElements = document.querySelectorAll("#currentYear");
+  const yearElements =
+    document.querySelectorAll("#currentYear");
 
-  const currentYear = new Date().getFullYear();
+
+  const currentYear =
+    new Date().getFullYear();
+
 
   yearElements.forEach((element) => {
-    element.textContent = currentYear;
+
+    element.textContent =
+      currentYear;
+
   });
 
 
@@ -27,65 +34,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuButton =
     document.getElementById("mobileMenuButton");
 
+
   const navMenu =
     document.getElementById("navMenu");
 
 
   if (mobileMenuButton && navMenu) {
 
-    mobileMenuButton.addEventListener("click", () => {
+    mobileMenuButton.addEventListener(
+      "click",
+      () => {
 
-      const isOpen =
-        navMenu.classList.toggle("open");
+        const isOpen =
+          navMenu.classList.toggle("open");
 
-
-      mobileMenuButton.setAttribute(
-        "aria-expanded",
-        isOpen ? "true" : "false"
-      );
-
-
-      const menuIcon =
-        mobileMenuButton.querySelector("i");
-
-
-      if (menuIcon) {
-
-        if (isOpen) {
-
-          menuIcon.classList.remove("fa-bars");
-
-          menuIcon.classList.add("fa-xmark");
-
-        } else {
-
-          menuIcon.classList.remove("fa-xmark");
-
-          menuIcon.classList.add("fa-bars");
-
-        }
-
-      }
-
-    });
-
-
-
-    /* Close mobile menu after a navigation link is clicked */
-
-    const mobileNavLinks =
-      navMenu.querySelectorAll("a.nav-link");
-
-
-    mobileNavLinks.forEach((link) => {
-
-      link.addEventListener("click", () => {
-
-        navMenu.classList.remove("open");
 
         mobileMenuButton.setAttribute(
           "aria-expanded",
-          "false"
+          isOpen ? "true" : "false"
         );
 
 
@@ -95,13 +61,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (menuIcon) {
 
-          menuIcon.classList.remove("fa-xmark");
+          if (isOpen) {
 
-          menuIcon.classList.add("fa-bars");
+            menuIcon.classList.remove(
+              "fa-bars"
+            );
+
+
+            menuIcon.classList.add(
+              "fa-xmark"
+            );
+
+          } else {
+
+            menuIcon.classList.remove(
+              "fa-xmark"
+            );
+
+
+            menuIcon.classList.add(
+              "fa-bars"
+            );
+
+          }
 
         }
 
-      });
+      }
+    );
+
+
+
+    /* -----------------------------------------------------
+       CLOSE MENU AFTER NAVIGATION
+    ----------------------------------------------------- */
+
+    const mobileNavLinks =
+      navMenu.querySelectorAll(
+        "a.nav-link"
+      );
+
+
+    mobileNavLinks.forEach((link) => {
+
+      link.addEventListener(
+        "click",
+        () => {
+
+          closeMobileMenu();
+
+        }
+      );
 
     });
 
@@ -114,70 +124,118 @@ document.addEventListener("DOMContentLoaded", () => {
   ======================================================= */
 
   const languageButtons =
-    document.querySelectorAll(".language-button");
+    document.querySelectorAll(
+      ".language-button"
+    );
 
 
   /*
-     Read saved language preference.
+     Spanish is the default.
 
-     English is used by default if the visitor has never
-     selected a language before.
+     If the visitor has previously chosen English or Spanish,
+     their saved preference takes priority.
   */
 
   const savedLanguage =
-    localStorage.getItem("digitalStudioLanguage") || "en";
+    localStorage.getItem(
+      "digitalStudioLanguage"
+    );
 
 
-  setLanguage(savedLanguage);
+  const startingLanguage =
+    savedLanguage === "en" ||
+    savedLanguage === "es"
+      ? savedLanguage
+      : "es";
 
 
+  setLanguage(
+    startingLanguage,
+    false
+  );
+
+
+
+  /* -------------------------------------------------------
+     LANGUAGE BUTTON EVENTS
+  ------------------------------------------------------- */
 
   languageButtons.forEach((button) => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener(
+      "click",
+      () => {
 
-      const selectedLanguage =
-        button.dataset.lang;
+        const selectedLanguage =
+          button.dataset.lang;
 
 
-      if (!selectedLanguage) {
-        return;
+        if (
+          selectedLanguage !== "en" &&
+          selectedLanguage !== "es"
+        ) {
+
+          return;
+
+        }
+
+
+        setLanguage(
+          selectedLanguage,
+          true
+        );
+
       }
-
-
-      localStorage.setItem(
-        "digitalStudioLanguage",
-        selectedLanguage
-      );
-
-
-      setLanguage(selectedLanguage);
-
-    });
+    );
 
   });
 
 
 
   /* =======================================================
-     LANGUAGE FUNCTION
+     SET LANGUAGE
   ======================================================= */
 
-  function setLanguage(language) {
+  function setLanguage(
+    language,
+    savePreference = true
+  ) {
 
     /*
-       Update language button appearance.
+       Save the visitor's preference only when appropriate.
+    */
+
+    if (savePreference) {
+
+      localStorage.setItem(
+        "digitalStudioLanguage",
+        language
+      );
+
+    }
+
+
+
+    /*
+       Tell browsers and accessibility tools what
+       language the current page is using.
+    */
+
+    document.documentElement.lang =
+      language;
+
+
+
+    /*
+       Update all EN / ES buttons in both
+       the header and footer.
     */
 
     languageButtons.forEach((button) => {
 
-      const isActive =
-        button.dataset.lang === language;
-
-
       button.classList.toggle(
         "active",
-        isActive
+        button.dataset.lang === language
       );
 
     });
@@ -185,32 +243,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /*
-       Update the HTML language attribute.
-
-       This helps browsers, search engines and
-       accessibility tools understand the page language.
-    */
-
-    document.documentElement.lang = language;
-
-
-
-    /*
-       IMPORTANT:
-
-       translation.js will define:
-
-       window.translations
-
-       We deliberately check whether it exists so the
-       website still works normally while translation.js
-       is being built later.
+       Confirm translation data exists.
     */
 
     if (
-      typeof window.translations === "undefined" ||
+      typeof window.translations ===
+        "undefined" ||
       !window.translations[language]
     ) {
+
+      console.warn(
+        `Translation data not found for: ${language}`
+      );
 
       return;
 
@@ -221,42 +265,56 @@ document.addEventListener("DOMContentLoaded", () => {
       window.translations[language];
 
 
+
+    /* -----------------------------------------------------
+       STANDARD TEXT TRANSLATIONS
+    ----------------------------------------------------- */
+
     const translatableElements =
-      document.querySelectorAll("[data-i18n]");
+      document.querySelectorAll(
+        "[data-i18n]"
+      );
 
 
-    translatableElements.forEach((element) => {
+    translatableElements.forEach(
+      (element) => {
 
-      const translationKey =
-        element.dataset.i18n;
-
-
-      const translatedText =
-        getTranslation(
-          languageData,
-          translationKey
-        );
+        const translationKey =
+          element.dataset.i18n;
 
 
-      if (
-        translatedText !== undefined &&
-        translatedText !== null
-      ) {
+        const translatedText =
+          getTranslation(
+            languageData,
+            translationKey
+          );
 
-        element.innerHTML =
-          translatedText;
+
+        if (
+          translatedText !== undefined &&
+          translatedText !== null
+        ) {
+
+          /*
+             innerHTML is intentional.
+
+             Several translations contain <span>
+             elements used for colorful headline text.
+          */
+
+          element.innerHTML =
+            translatedText;
+
+        }
 
       }
-
-    });
-
+    );
 
 
-    /*
-       Translate placeholders separately.
 
-       We'll use data-i18n-placeholder later where needed.
-    */
+    /* -----------------------------------------------------
+       FORM PLACEHOLDERS
+    ----------------------------------------------------- */
 
     const placeholderElements =
       document.querySelectorAll(
@@ -264,32 +322,77 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
 
-    placeholderElements.forEach((element) => {
+    placeholderElements.forEach(
+      (element) => {
 
-      const translationKey =
-        element.dataset.i18nPlaceholder;
-
-
-      const translatedPlaceholder =
-        getTranslation(
-          languageData,
-          translationKey
-        );
+        const translationKey =
+          element.dataset.i18nPlaceholder;
 
 
-      if (
-        translatedPlaceholder !== undefined &&
-        translatedPlaceholder !== null
-      ) {
+        const translatedPlaceholder =
+          getTranslation(
+            languageData,
+            translationKey
+          );
 
-        element.setAttribute(
-          "placeholder",
-          translatedPlaceholder
-        );
+
+        if (
+          translatedPlaceholder !== undefined &&
+          translatedPlaceholder !== null
+        ) {
+
+          element.setAttribute(
+            "placeholder",
+            translatedPlaceholder
+          );
+
+        }
 
       }
+    );
 
-    });
+
+
+    /* -----------------------------------------------------
+       OPTIONAL ARIA LABEL TRANSLATIONS
+
+       Supported for future use.
+    ----------------------------------------------------- */
+
+    const ariaElements =
+      document.querySelectorAll(
+        "[data-i18n-aria]"
+      );
+
+
+    ariaElements.forEach(
+      (element) => {
+
+        const translationKey =
+          element.dataset.i18nAria;
+
+
+        const translatedAria =
+          getTranslation(
+            languageData,
+            translationKey
+          );
+
+
+        if (
+          translatedAria !== undefined &&
+          translatedAria !== null
+        ) {
+
+          element.setAttribute(
+            "aria-label",
+            translatedAria
+          );
+
+        }
+
+      }
+    );
 
   }
 
@@ -320,7 +423,8 @@ document.addEventListener("DOMContentLoaded", () => {
         (currentValue, key) => {
 
           if (
-            currentValue &&
+            currentValue !== undefined &&
+            currentValue !== null &&
             Object.prototype.hasOwnProperty.call(
               currentValue,
               key
@@ -330,6 +434,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return currentValue[key];
 
           }
+
 
           return undefined;
 
@@ -342,40 +447,543 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* =======================================================
-     CLOSE MOBILE MENU WHEN SCREEN BECOMES DESKTOP SIZE
+     PROJECT INTAKE FORM → WHATSAPP
   ======================================================= */
 
-  window.addEventListener("resize", () => {
+  const projectForm =
+    document.getElementById(
+      "projectForm"
+    );
+
+
+  if (projectForm) {
+
+    projectForm.addEventListener(
+      "submit",
+      (event) => {
+
+        event.preventDefault();
+
+
+
+        /* -------------------------------------------------
+           RUN STANDARD HTML VALIDATION FIRST
+        ------------------------------------------------- */
+
+        if (
+          !projectForm.checkValidity()
+        ) {
+
+          projectForm.reportValidity();
+
+          return;
+
+        }
+
+
+
+        /* -------------------------------------------------
+           COLLECT FORM DATA
+        ------------------------------------------------- */
+
+        const formData =
+          new FormData(
+            projectForm
+          );
+
+
+        const name =
+          formData.get("name") || "";
+
+
+        const business =
+          formData.get("business") || "";
+
+
+        const email =
+          formData.get("email") || "";
+
+
+        const phone =
+          formData.get("whatsapp") || "";
+
+
+        const projectType =
+          formData.get("project_type") || "";
+
+
+        const selectedServices =
+          formData.getAll("services");
+
+
+        const domain =
+          formData.get("domain") || "";
+
+
+        const siteLanguage =
+          formData.get("language") || "";
+
+
+        const website =
+          formData.get("website") || "";
+
+
+        const projectDescription =
+          formData.get("message") || "";
+
+
+
+        /* -------------------------------------------------
+           DETERMINE CURRENT SITE LANGUAGE
+        ------------------------------------------------- */
+
+        const currentLanguage =
+          document.documentElement.lang === "en"
+            ? "en"
+            : "es";
+
+
+
+        /* =================================================
+           FRIENDLY FORM LABELS
+        ================================================= */
+
+        const formLabels = {
+
+          en: {
+
+            projectTypes: {
+
+              retail:
+                "Retail / Product",
+
+              services:
+                "Professional Services",
+
+              education:
+                "Education",
+
+              creator:
+                "Creator / Personal Brand",
+
+              community:
+                "Community / Content",
+
+              other:
+                "Something Else"
+
+            },
+
+
+            services: {
+
+              website:
+                "New Website",
+
+              update:
+                "Existing Website Update",
+
+              social:
+                "Social Media Integration",
+
+              whatsapp:
+                "WhatsApp Business",
+
+              google:
+                "Google Business Profile",
+
+              domain:
+                "Domain & Launch Setup",
+
+              maintenance:
+                "Ongoing Maintenance",
+
+              unsure:
+                "Not Sure Yet"
+
+            },
+
+
+            domainAnswers: {
+
+              yes:
+                "Yes",
+
+              no:
+                "No",
+
+              unsure:
+                "Not Sure"
+
+            },
+
+
+            languages: {
+
+              english:
+                "English",
+
+              spanish:
+                "Spanish",
+
+              bilingual:
+                "English + Spanish"
+
+            }
+
+          },
+
+
+          es: {
+
+            projectTypes: {
+
+              retail:
+                "Retail / Producto",
+
+              services:
+                "Servicios Profesionales",
+
+              education:
+                "Educación",
+
+              creator:
+                "Creador / Marca Personal",
+
+              community:
+                "Comunidad / Contenido",
+
+              other:
+                "Otro"
+
+            },
+
+
+            services: {
+
+              website:
+                "Nuevo Sitio Web",
+
+              update:
+                "Actualizar un Sitio Existente",
+
+              social:
+                "Integración de Redes Sociales",
+
+              whatsapp:
+                "WhatsApp Business",
+
+              google:
+                "Perfil de Negocio en Google",
+
+              domain:
+                "Dominio y Lanzamiento",
+
+              maintenance:
+                "Mantenimiento Continuo",
+
+              unsure:
+                "Todavía No Estoy Seguro"
+
+            },
+
+
+            domainAnswers: {
+
+              yes:
+                "Sí",
+
+              no:
+                "No",
+
+              unsure:
+                "No Estoy Seguro"
+
+            },
+
+
+            languages: {
+
+              english:
+                "Inglés",
+
+              spanish:
+                "Español",
+
+              bilingual:
+                "Inglés + Español"
+
+            }
+
+          }
+
+        };
+
+
+
+        const labels =
+          formLabels[currentLanguage];
+
+
+
+        /* -------------------------------------------------
+           CREATE READABLE VALUES
+        ------------------------------------------------- */
+
+        const readableProjectType =
+          labels.projectTypes[
+            projectType
+          ] ||
+          (
+            currentLanguage === "es"
+              ? "No seleccionado"
+              : "Not selected"
+          );
+
+
+        const readableDomain =
+          labels.domainAnswers[
+            domain
+          ] ||
+          (
+            currentLanguage === "es"
+              ? "No seleccionado"
+              : "Not selected"
+          );
+
+
+        const readableSiteLanguage =
+          labels.languages[
+            siteLanguage
+          ] ||
+          (
+            currentLanguage === "es"
+              ? "No seleccionado"
+              : "Not selected"
+          );
+
+
+
+        const readableServices =
+          selectedServices.length
+            ? selectedServices.map(
+                (service) =>
+                  labels.services[
+                    service
+                  ] ||
+                  service
+              )
+            : [
+                currentLanguage === "es"
+                  ? "Ninguno seleccionado"
+                  : "None selected"
+              ];
+
+
+
+        const servicesText =
+          readableServices
+            .map(
+              (service) =>
+                `✓ ${service}`
+            )
+            .join("\n");
+
+
+
+        /* =================================================
+           BUILD WHATSAPP MESSAGE
+        ================================================= */
+
+        let whatsappMessage;
+
+
+        if (
+          currentLanguage === "es"
+        ) {
+
+          whatsappMessage =
+`¡Hola Digital Studio! Me gustaría conversar sobre un proyecto.
+
+INFORMACIÓN DE CONTACTO
+
+Nombre: ${name || "No proporcionado"}
+Negocio / Proyecto: ${business || "No proporcionado"}
+Correo: ${email || "No proporcionado"}
+WhatsApp / Teléfono: ${phone || "No proporcionado"}
+
+INFORMACIÓN DEL PROYECTO
+
+Tipo de proyecto:
+${readableProjectType}
+
+Servicios solicitados:
+${servicesText}
+
+¿Ya tiene un dominio?
+${readableDomain}
+
+Idioma del sitio:
+${readableSiteLanguage}
+
+Sitio web o red social actual:
+${website || "Ninguno"}
+
+DESCRIPCIÓN DEL PROYECTO
+
+${projectDescription || "No proporcionada"}
+
+¡Gracias!`;
+
+        } else {
+
+          whatsappMessage =
+`Hi Digital Studio! I'd like to discuss a project.
+
+CONTACT INFORMATION
+
+Name: ${name || "Not provided"}
+Business / Project: ${business || "Not provided"}
+Email: ${email || "Not provided"}
+WhatsApp / Phone: ${phone || "Not provided"}
+
+PROJECT INFORMATION
+
+Project Type:
+${readableProjectType}
+
+Requested Services:
+${servicesText}
+
+Already Own a Domain?
+${readableDomain}
+
+Website Language:
+${readableSiteLanguage}
+
+Current Website / Social Page:
+${website || "None"}
+
+PROJECT DESCRIPTION
+
+${projectDescription || "Not provided"}
+
+Thank you!`;
+
+        }
+
+
+
+        /* =================================================
+           DIGITAL STUDIO WHATSAPP
+
+           Ecuador local:
+           098 374 4247
+
+           International:
+           +593 98 374 4247
+
+           wa.me:
+           593983744247
+        ================================================= */
+
+        const whatsappNumber =
+          "593983744247";
+
+
+
+        const whatsappURL =
+          `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+            whatsappMessage
+          )}`;
+
+
+
+        /* -------------------------------------------------
+           OPEN WHATSAPP
+        ------------------------------------------------- */
+
+        window.open(
+          whatsappURL,
+          "_blank",
+          "noopener,noreferrer"
+        );
+
+      }
+    );
+
+  }
+
+
+
+  /* =======================================================
+     CLOSE MOBILE MENU FUNCTION
+  ======================================================= */
+
+  function closeMobileMenu() {
 
     if (
-      window.innerWidth > 820 &&
-      navMenu &&
-      mobileMenuButton
+      !navMenu ||
+      !mobileMenuButton
     ) {
 
-      navMenu.classList.remove("open");
+      return;
 
-      mobileMenuButton.setAttribute(
-        "aria-expanded",
-        "false"
+    }
+
+
+    navMenu.classList.remove(
+      "open"
+    );
+
+
+    mobileMenuButton.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+
+    const menuIcon =
+      mobileMenuButton.querySelector(
+        "i"
       );
 
 
-      const menuIcon =
-        mobileMenuButton.querySelector("i");
+    if (menuIcon) {
+
+      menuIcon.classList.remove(
+        "fa-xmark"
+      );
 
 
-      if (menuIcon) {
+      menuIcon.classList.add(
+        "fa-bars"
+      );
 
-        menuIcon.classList.remove("fa-xmark");
+    }
 
-        menuIcon.classList.add("fa-bars");
+  }
+
+
+
+  /* =======================================================
+     CLOSE MENU WHEN SCREEN RETURNS TO DESKTOP
+  ======================================================= */
+
+  window.addEventListener(
+    "resize",
+    () => {
+
+      if (
+        window.innerWidth > 820
+      ) {
+
+        closeMobileMenu();
 
       }
 
     }
-
-  });
+  );
 
 
 
@@ -390,41 +998,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (
         event.key === "Escape" &&
         navMenu &&
-        navMenu.classList.contains("open")
+        navMenu.classList.contains(
+          "open"
+        )
       ) {
 
-        navMenu.classList.remove("open");
-
-
-        if (mobileMenuButton) {
-
-          mobileMenuButton.setAttribute(
-            "aria-expanded",
-            "false"
-          );
-
-
-          const menuIcon =
-            mobileMenuButton.querySelector("i");
-
-
-          if (menuIcon) {
-
-            menuIcon.classList.remove(
-              "fa-xmark"
-            );
-
-            menuIcon.classList.add(
-              "fa-bars"
-            );
-
-          }
-
-        }
+        closeMobileMenu();
 
       }
 
     }
   );
+
 
 });
