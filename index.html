@@ -1,11 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Studio</title>
+
+  <meta
+    name="description"
+    content="Digital Studio creates websites and digital solutions for small businesses, professionals, creators and entrepreneurs."
+  >
+
+  <title>Digital Studio | Websites & Digital Solutions</title>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 </head>
+
+
 <body>
-  <h1>Digital Studio</h1>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
+
+  <header class="site-header">
+
+    <nav class="navbar">
+
+      <a href="index.html" class="brand">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Digital Studio</span>
+      </a>
+
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+
+      <div class="nav-menu" id="navMenu">
+
+        <a
+          href="index.html"
+          class="nav-link active"
+          data-i18n="nav.home"
+        >
+          Home
+        </a>
+
+        <a
+          href="services.html"
+          class="nav-link"
+          data-i18n="nav.services"
+        >
+          Services
+        </a>
+
+        <a
+          href="portfolio.html"
+          class="nav-link"
+          data-i18n="nav.work"
+        >
+          Our Work
+        </a>
+
+        <a
+          href="contact.html"
+          class="nav-link nav-cta"
+          data-i18n="nav.start"
+        >
+          Start a Project
+        </a>
+
+
+        <div class="language-switcher">
+
+          <button
+            class="language-button active"
+            data-lang="en"
+            type="button"
+          >
+            EN
+          </button>
+
+          <span>/</span>
+
+          <button
+            class="language-button"
+            data-lang="es"
+            type="button"
+          >
+            ES
+          </button>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-decoration hero-decoration-one"></div>
+      <div class="hero-decoration hero-decoration-two"></div>
+
+
+      <div class="hero-content">
+
+        <div
+          class="eyebrow"
+          data-i18n="home.hero.eyebrow"
+        >
+          Websites • Digital Presence • Business Tools
+        </div>
+
+
+        <h1 data-i18n="home.hero.title">
+          Your idea deserves
+          <span>a home online.</span>
+        </h1>
+
+
+        <p
+          class="hero-description"
+          data-i18n="home.hero.description"
+        >
+          Websites and digital solutions built for small businesses,
+          professionals, creators and entrepreneurs.
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a
+            href="portfolio.html"
+            class="button button-primary"
+            data-i18n="home.hero.workButton"
+          >
+            See Our Work
+          </a>
+
+          <a
+            href="contact.html"
+            class="button button-secondary"
+            data-i18n="home.hero.projectButton"
+          >
+            Start a Project
+          </a>
+
+        </div>
+
+
+        <div class="hero-tags">
+
+          <span>Websites</span>
+
+          <span>Social Media</span>
+
+          <span>WhatsApp</span>
+
+          <span>Google Business</span>
+
+          <span>Domains</span>
+
+          <span>Maintenance</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SERVICES OVERVIEW
+    ========================== -->
+
+    <section class="section services-preview">
+
+      <div class="section-heading">
+
+        <span
+          class="section-label"
+          data-i18n="home.services.label"
+        >
+          What We Do
+        </span>
+
+        <h2 data-i18n="home.services.title">
+          Everything you need to get online.
+        </h2>
+
+        <p data-i18n="home.services.description">
+          From your first website to the tools that help customers
+          find and contact your business, we help bring the pieces together.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+
+        <!-- Website Design -->
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <h3 data-i18n="home.services.website.title">
+            Website Design
+          </h3>
+
+          <p data-i18n="home.services.website.description">
+            Custom websites designed around your business,
+            audience and goals.
+          </p>
+
+        </article>
+
+
+
+        <!-- Social Media -->
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+
+          <h3 data-i18n="home.services.social.title">
+            Social Integration
+          </h3>
+
+          <p data-i18n="home.services.social.description">
+            Connect your website directly to Instagram,
+            Facebook, TikTok and other platforms.
+          </p>
+
+        </article>
+
+
+
+        <!-- WhatsApp -->
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <h3 data-i18n="home.services.whatsapp.title">
+            WhatsApp Business
+          </h3>
+
+          <p data-i18n="home.services.whatsapp.description">
+            Give customers a simple way to contact your
+            business directly from your website.
+          </p>
+
+        </article>
+
+
+
+        <!-- Google Business -->
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <h3 data-i18n="home.services.google.title">
+            Google Business
+          </h3>
+
+          <p data-i18n="home.services.google.description">
+            Build a stronger local presence and help customers
+            discover your business online.
+          </p>
+
+        </article>
+
+
+
+        <!-- Domain -->
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+
+          <h3 data-i18n="home.services.domain.title">
+            Domain & Launch
+          </h3>
+
+          <p data-i18n="home.services.domain.description">
+            Connect your domain, configure your website
+            and securely launch it online.
+          </p>
+
+        </article>
+
+
+
+        <!-- Maintenance -->
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+
+          <h3 data-i18n="home.services.maintenance.title">
+            Updates & Maintenance
+          </h3>
+
+          <p data-i18n="home.services.maintenance.description">
+            Keep your website current with new content,
+            images, services and ongoing improvements.
+          </p>
+
+        </article>
+
+
+      </div>
+
+
+      <div class="center-button">
+
+        <a
+          href="services.html"
+          class="text-link"
+          data-i18n="home.services.more"
+        >
+          Explore all services
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FEATURED PORTFOLIO
+    ========================== -->
+
+    <section class="section portfolio-preview">
+
+      <div class="section-heading portfolio-heading">
+
+        <span
+          class="section-label"
+          data-i18n="home.portfolio.label"
+        >
+          Selected Work
+        </span>
+
+        <h2 data-i18n="home.portfolio.title">
+          Real projects. Different ideas.
+        </h2>
+
+        <p data-i18n="home.portfolio.description">
+          Explore websites created for businesses,
+          educators, professionals and entrepreneurs.
+        </p>
+
+      </div>
+
+
+
+      <div class="portfolio-grid">
+
+
+        <!-- D'Leon Designs -->
+
+        <a
+          href="https://leonfashion.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="portfolio-card"
+        >
+
+          <div class="browser-window">
+
+            <div class="browser-bar">
+
+              <div class="browser-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="browser-address">
+                leonfashion.github.io
+              </div>
+
+            </div>
+
+
+            <div class="portfolio-placeholder">
+
+              <i class="fa-solid fa-image"></i>
+
+              <span data-i18n="home.portfolio.preview">
+                Project Preview
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="portfolio-card-info">
+
+            <span
+              class="portfolio-category"
+              data-i18n="home.portfolio.retail"
+            >
+              Retail & Bridal
+            </span>
+
+            <div class="portfolio-title-row">
+
+              <h3>D'Leon Designs</h3>
+
+              <span class="portfolio-arrow">↗</span>
+
+            </div>
+
+            <p data-i18n="home.portfolio.dleon">
+              A visual bridal and retail website featuring
+              collections, services and direct customer connections.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- English With Gabby -->
+
+        <a
+          href="https://www.englishwithgabbyec.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="portfolio-card"
+        >
+
+          <div class="browser-window">
+
+            <div class="browser-bar">
+
+              <div class="browser-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="browser-address">
+                englishwithgabbyec.com
+              </div>
+
+            </div>
+
+
+            <div class="portfolio-placeholder">
+
+              <i class="fa-solid fa-image"></i>
+
+              <span data-i18n="home.portfolio.preview">
+                Project Preview
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="portfolio-card-info">
+
+            <span
+              class="portfolio-category"
+              data-i18n="home.portfolio.education"
+            >
+              Education
+            </span>
+
+            <div class="portfolio-title-row">
+
+              <h3>English With Gabby</h3>
+
+              <span class="portfolio-arrow">↗</span>
+
+            </div>
+
+            <p data-i18n="home.portfolio.gabby">
+              A bilingual educational website featuring
+              classes, digital products and custom domain integration.
+            </p>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+
+
+      <div class="center-button">
+
+        <a
+          href="portfolio.html"
+          class="button button-dark"
+          data-i18n="home.portfolio.button"
+        >
+          Explore All Projects
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         DIGITAL PRESENCE
+    ========================== -->
+
+    <section class="digital-section">
+
+      <div class="digital-content">
+
+        <div class="digital-copy">
+
+          <span
+            class="section-label light-label"
+            data-i18n="home.digital.label"
+          >
+            More Than a Website
+          </span>
+
+          <h2 data-i18n="home.digital.title">
+            You run your business.
+            <span>We'll handle the digital side.</span>
+          </h2>
+
+          <p data-i18n="home.digital.description">
+            Your online presence involves more than a homepage.
+            We help connect the tools your customers use to discover,
+            understand and contact your business.
+          </p>
+
+        </div>
+
+
+        <div class="digital-list">
+
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="home.digital.website">
+              Website
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="home.digital.whatsapp">
+              WhatsApp
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="home.digital.social">
+              Social Media
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="home.digital.domain">
+              Custom Domain
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="home.digital.google">
+              Google Business
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="home.digital.support">
+              Ongoing Support
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROCESS
+    ========================== -->
+
+    <section class="section process-section">
+
+      <div class="section-heading">
+
+        <span
+          class="section-label"
+          data-i18n="home.process.label"
+        >
+          How It Works
+        </span>
+
+        <h2 data-i18n="home.process.title">
+          From idea to online.
+        </h2>
+
+        <p data-i18n="home.process.description">
+          A straightforward process designed to make
+          launching your digital presence simple.
+        </p>
+
+      </div>
+
+
+
+      <div class="process-grid">
+
+
+        <article class="process-step">
+
+          <span class="step-number">01</span>
+
+          <h3 data-i18n="home.process.step1.title">
+            Tell us your idea
+          </h3>
+
+          <p data-i18n="home.process.step1.description">
+            Tell us about your business, your goals
+            and what you need.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-step">
+
+          <span class="step-number">02</span>
+
+          <h3 data-i18n="home.process.step2.title">
+            We design & build
+          </h3>
+
+          <p data-i18n="home.process.step2.description">
+            We turn your ideas into a polished
+            digital experience.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-step">
+
+          <span class="step-number">03</span>
+
+          <h3 data-i18n="home.process.step3.title">
+            You review
+          </h3>
+
+          <p data-i18n="home.process.step3.description">
+            Review the project and help us refine
+            the details before launch.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-step">
+
+          <span class="step-number">04</span>
+
+          <h3 data-i18n="home.process.step4.title">
+            We launch
+          </h3>
+
+          <p data-i18n="home.process.step4.description">
+            We connect the pieces and get your
+            new digital presence online.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-step">
+
+          <span class="step-number">05</span>
+
+          <h3 data-i18n="home.process.step5.title">
+            We stay available
+          </h3>
+
+          <p data-i18n="home.process.step5.description">
+            Need changes later? Your website
+            can continue growing with you.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FINAL CTA
+    ========================== -->
+
+    <section class="cta-section">
+
+      <div class="cta-content">
+
+        <span
+          class="section-label"
+          data-i18n="home.cta.label"
+        >
+          Have an idea?
+        </span>
+
+        <h2 data-i18n="home.cta.title">
+          Let's build something.
+        </h2>
+
+        <p data-i18n="home.cta.description">
+          Tell us what you're working on and let's explore
+          how Digital Studio can help bring it online.
+        </p>
+
+        <a
+          href="contact.html"
+          class="button button-primary"
+          data-i18n="home.cta.button"
+        >
+          Start a Project
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="brand footer-logo">
+
+          <span class="brand-mark">&lt;/&gt;</span>
+
+          <span>Digital Studio</span>
+
+        </a>
+
+        <p data-i18n="footer.tagline">
+          Websites, digital presence and business tools
+          built to help ideas grow online.
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-links">
+
+        <div>
+
+          <h4 data-i18n="footer.explore">
+            Explore
+          </h4>
+
+          <a
+            href="index.html"
+            data-i18n="nav.home"
+          >
+            Home
+          </a>
+
+          <a
+            href="services.html"
+            data-i18n="nav.services"
+          >
+            Services
+          </a>
+
+          <a
+            href="portfolio.html"
+            data-i18n="nav.work"
+          >
+            Our Work
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h4 data-i18n="footer.contact">
+            Get Started
+          </h4>
+
+          <a
+            href="contact.html"
+            data-i18n="nav.start"
+          >
+            Start a Project
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © <span id="currentYear"></span> Digital Studio.
+        <span data-i18n="footer.rights">
+          All rights reserved.
+        </span>
+      </p>
+
+      <div class="footer-language">
+
+        <button
+          class="language-button"
+          data-lang="en"
+          type="button"
+        >
+          EN
+        </button>
+
+        <span>/</span>
+
+        <button
+          class="language-button"
+          data-lang="es"
+          type="button"
+        >
+          ES
+        </button>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- Translation data MUST load before script.js -->
+  <script src="js/translation.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
+
 </html>
