@@ -29,7 +29,7 @@ window.translations = {
         "Our Work",
 
       about:
-        "About David",
+        "About the Founder",
 
       start:
         "Start a Project"
@@ -228,7 +228,7 @@ window.translations = {
           "Technical, creative and quality assurance experience",
 
         button:
-          "Learn More About David"
+          "Learn More About the Founder"
 
       },
 
@@ -977,7 +977,7 @@ window.translations = {
       hero: {
 
         label:
-          "Meet the Creator",
+          "Meet the Founder",
 
         title:
           'Hi, I\'m David. <span>I build digital experiences that work.</span>',
@@ -1534,7 +1534,7 @@ window.translations = {
         "Nuestro Trabajo",
 
       about:
-        "Sobre David",
+        "Sobre el Fundador",
 
       start:
         "Inicia un Proyecto"
@@ -1725,7 +1725,7 @@ window.translations = {
           "Experiencia técnica, creativa y de control de calidad",
 
         button:
-          "Conoce Más Sobre David"
+          "Conoce Más Sobre el Fundador"
 
       },
 
@@ -2449,7 +2449,7 @@ window.translations = {
 
 
     /* =====================================================
-       ABOUT DAVID PAGE
+       ABOUT THE FOUNDER PAGE
     ===================================================== */
 
     about: {
@@ -2458,7 +2458,7 @@ window.translations = {
       hero: {
 
         label:
-          "Conoce al Creador",
+          "Conoce al Fundador",
 
         title:
           'Hola, soy David. <span>Creo experiencias digitales que funcionan.</span>',
