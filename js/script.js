@@ -878,7 +878,7 @@ Thank you!`;
            DIGITAL STUDIO WHATSAPP
 
            Ecuador local:
-           098 374 4247
+           099 374 4247
 
            International:
            +593 99 374 4247
