@@ -903,11 +903,14 @@ Thank you!`;
            OPEN WHATSAPP
         ------------------------------------------------- */
 
-        window.open(
-          whatsappURL,
-          "_blank",
-          "noopener,noreferrer"
-        );
+      window.open(
+  whatsappURL,
+  "_blank",
+  "noopener,noreferrer"
+);
+
+/* Clear the form after the WhatsApp message has been created */
+projectForm.reset();
 
       }
     );
